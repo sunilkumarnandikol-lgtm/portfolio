@@ -1,0 +1,2798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO & Social Sharing Metadata -->
+  <title>Sunil Kumar Nandikol | Computer Science Engineering &amp; Aspiring Software Developer</title>
+  <meta name="description" content="Portfolio of Sunil Kumar Nandikol, 3rd-year Computer Science Engineering student at PES College of Engineering, Mandya. Exploring software development, AI, DevOps, and innovative technology solutions." />
+  <meta name="keywords" content="Sunil Kumar Nandikol, Sunil Kumar, Computer Science Engineering, PES College of Engineering, Mandya, Software Developer Portfolio, Java, C++, Python, Web Development, DevOps" />
+  <meta name="author" content="Sunil Kumar Nandikol" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sunil Kumar Nandikol | Computer Science Engineering &amp; Aspiring Software Developer" />
+  <meta property="og:description" content="Portfolio of Sunil Kumar Nandikol — 3rd-year CSE student at PES College of Engineering, Mandya. View projects, technical toolkit, and academic journey." />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Sunil Kumar Nandikol | Computer Science Engineering &amp; Aspiring Software Developer" />
+  <meta property="twitter:description" content="Portfolio of Sunil Kumar Nandikol — 3rd-year CSE student at PES College of Engineering, Mandya." />
+
+  <!-- Self-Contained SVG Favicon (No external file needed) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2300d2ff'/%3E%3Cstop offset='50%25' stop-color='%233b82f6'/%3E%3Cstop offset='100%25' stop-color='%238b5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='%23080a10'/%3E%3Crect x='3' y='3' width='94' height='94' rx='21' fill='none' stroke='url(%23g)' stroke-width='3'/%3E%3Ctext x='50' y='64' font-family='sans-serif' font-size='42' font-weight='800' fill='url(%23g)' text-anchor='middle' letter-spacing='-2'%3ESN%3C/text%3E%3Ccircle cx='82' cy='22' r='5' fill='%2310b981'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts: Space Grotesk (Headings), Inter (Body), JetBrains Mono (Code) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- JSON-LD Structured Data for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sunil Kumar Nandikol",
+    "jobTitle": "Computer Science Engineering Student & Aspiring Software Developer",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "PES College of Engineering, Mandya"
+    },
+    "email": "sunilkumarnandikhol@gmail.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/sunilkumar-nandikol-b1111533b",
+      "https://github.com/sunilkumar-nandikol"
+    ]
+  }
+  </script>
+
+  <!-- ========================================================================
+       COMPLETE EMBEDDED STYLESHEET (Zero external CSS dependencies)
+       ======================================================================== -->
+  <style>
+    /* --------------------------------------------------------------------------
+       1. DESIGN TOKENS & VARIABLES
+       -------------------------------------------------------------------------- */
+    :root {
+      --bg-primary: #07090e;
+      --bg-secondary: #0d1017;
+      --bg-tertiary: #131722;
+      --bg-surface: #181d2a;
+      
+      --glass-bg: rgba(13, 16, 23, 0.75);
+      --glass-bg-hover: rgba(20, 25, 38, 0.85);
+      --glass-border: rgba(255, 255, 255, 0.08);
+      --glass-border-hover: rgba(0, 210, 255, 0.35);
+      --glass-blur: blur(16px);
+
+      --cyan-primary: #00d2ff;
+      --blue-primary: #3b82f6;
+      --violet-primary: #8b5cf6;
+      --purple-glow: #a855f7;
+      --emerald-status: #10b981;
+      --amber-learning: #f59e0b;
+      --coral-accent: #f43f5e;
+
+      --gradient-brand: linear-gradient(135deg, #00d2ff 0%, #3b82f6 45%, #8b5cf6 100%);
+      --gradient-text: linear-gradient(135deg, #ffffff 20%, #93c5fd 60%, #c4b5fd 100%);
+      --gradient-accent-text: linear-gradient(135deg, #00d2ff 0%, #818cf8 50%, #c084fc 100%);
+      --gradient-card-border: linear-gradient(135deg, rgba(0, 210, 255, 0.3) 0%, rgba(139, 92, 246, 0.25) 50%, rgba(255, 255, 255, 0.04) 100%);
+
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --text-light: #cbd5e1;
+      --text-contrast: #ffffff;
+
+      --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-code: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+
+      --space-2xs: 0.25rem;
+      --space-xs: 0.5rem;
+      --space-sm: 0.75rem;
+      --space-md: 1rem;
+      --space-lg: 1.5rem;
+      --space-xl: 2rem;
+      --space-2xl: 3rem;
+      --space-3xl: 4.5rem;
+      --space-4xl: 6rem;
+
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --radius-xl: 24px;
+      --radius-2xl: 32px;
+      --radius-full: 9999px;
+
+      --shadow-subtle: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+      --shadow-card: 0 12px 36px -8px rgba(0, 0, 0, 0.6);
+      --shadow-card-hover: 0 20px 48px -10px rgba(0, 0, 0, 0.75);
+      --glow-cyan-sm: 0 0 15px rgba(0, 210, 255, 0.25);
+      --glow-cyan-lg: 0 0 35px rgba(0, 210, 255, 0.35);
+
+      --container-max: 1200px;
+      --header-height: 74px;
+
+      --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-smooth: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* --------------------------------------------------------------------------
+       2. BASE RESET & AMBIENT LAYERS
+       -------------------------------------------------------------------------- */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(var(--header-height) + 24px);
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.65;
+      overflow-x: hidden;
+      position: relative;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-primary);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--bg-surface);
+      border-radius: var(--radius-full);
+      border: 2px solid var(--bg-primary);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--blue-primary);
+    }
+
+    ::selection {
+      background: rgba(0, 210, 255, 0.25);
+      color: #ffffff;
+    }
+
+    #ambient-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.65;
+    }
+
+    .cyber-grid-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 1;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: radial-gradient(ellipse at 50% 30%, black 20%, transparent 85%);
+      -webkit-mask-image: radial-gradient(ellipse at 50% 30%, black 20%, transparent 85%);
+    }
+
+    .ambient-glow-orb {
+      position: fixed;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(120px);
+      opacity: 0.18;
+    }
+    .ambient-glow-orb.orb-1 {
+      top: -150px;
+      left: 15%;
+      background: radial-gradient(circle, var(--cyan-primary), transparent 70%);
+    }
+    .ambient-glow-orb.orb-2 {
+      top: 45%;
+      right: -100px;
+      background: radial-gradient(circle, var(--violet-primary), transparent 70%);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-heading);
+      color: var(--text-primary);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      color: var(--text-secondary);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color var(--transition-fast), border-color var(--transition-fast);
+    }
+
+    img, svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    button, input, textarea {
+      font-family: inherit;
+      font-size: inherit;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: var(--space-lg);
+      padding-right: var(--space-lg);
+      position: relative;
+      z-index: 2;
+    }
+
+    .section {
+      padding-top: var(--space-4xl);
+      padding-bottom: var(--space-4xl);
+      position: relative;
+      z-index: 2;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto var(--space-3xl);
+    }
+
+    .section-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-xs);
+      padding: 6px 14px;
+      background: rgba(0, 210, 255, 0.08);
+      border: 1px solid rgba(0, 210, 255, 0.2);
+      border-radius: var(--radius-full);
+      font-family: var(--font-code);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--cyan-primary);
+      margin-bottom: var(--space-md);
+    }
+
+    .section-eyebrow .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--cyan-primary);
+      box-shadow: 0 0 8px var(--cyan-primary);
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      color: var(--text-primary);
+      margin-bottom: var(--space-md);
+      letter-spacing: -0.03em;
+    }
+
+    .section-title .text-gradient {
+      background: var(--gradient-brand);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* --------------------------------------------------------------------------
+       3. COMPONENTS: BUTTONS, CARDS, BADGES, MODALS, FORMS, TOASTS
+       -------------------------------------------------------------------------- */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-xs);
+      padding: 0.8rem 1.6rem;
+      border-radius: var(--radius-md);
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all var(--transition-smooth);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid transparent;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--gradient-brand);
+      color: #ffffff;
+      box-shadow: 0 4px 20px -2px rgba(0, 210, 255, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.3);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0, 210, 255, 0.55), inset 0 1px 2px rgba(255, 255, 255, 0.5);
+      color: #ffffff;
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-primary);
+      border: 1px solid var(--glass-border);
+      backdrop-filter: blur(8px);
+    }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(0, 210, 255, 0.4);
+      transform: translateY(-2px);
+      color: #ffffff;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--text-secondary);
+      border: 1px solid transparent;
+    }
+    .btn-ghost:hover {
+      color: var(--cyan-primary);
+      background: rgba(0, 210, 255, 0.08);
+    }
+
+    .btn-icon {
+      width: 44px;
+      height: 44px;
+      padding: 0;
+      border-radius: var(--radius-md);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--glass-border);
+      color: var(--text-secondary);
+      transition: all var(--transition-fast);
+    }
+    .btn-icon:hover {
+      color: var(--cyan-primary);
+      border-color: rgba(0, 210, 255, 0.4);
+      background: rgba(0, 210, 255, 0.1);
+      transform: translateY(-2px);
+      box-shadow: 0 0 15px rgba(0, 210, 255, 0.2);
+    }
+
+    .btn-sm {
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
+      border-radius: var(--radius-sm);
+    }
+    .btn-lg {
+      padding: 1rem 2.2rem;
+      font-size: 1.05rem;
+      border-radius: var(--radius-lg);
+    }
+
+    .glass-card {
+      background: var(--glass-bg);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-xl);
+      padding: var(--space-xl);
+      box-shadow: var(--shadow-card);
+      transition: all var(--transition-smooth);
+      position: relative;
+      overflow: hidden;
+    }
+    .glass-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+    }
+    .glass-card:hover {
+      border-color: rgba(0, 210, 255, 0.3);
+      box-shadow: var(--shadow-card-hover), 0 0 25px rgba(0, 210, 255, 0.1);
+    }
+
+    .tech-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-code);
+      font-size: 0.75rem;
+      color: var(--text-light);
+      transition: all var(--transition-fast);
+    }
+    .tech-tag:hover {
+      background: rgba(0, 210, 255, 0.08);
+      border-color: rgba(0, 210, 255, 0.25);
+      color: var(--cyan-primary);
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      font-family: var(--font-code);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .status-badge.concept {
+      background: rgba(139, 92, 246, 0.12);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      color: #c4b5fd;
+    }
+    .status-badge.concept .badge-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background-color: var(--violet-primary);
+      box-shadow: 0 0 8px var(--violet-primary);
+    }
+    .status-badge.live {
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #6ee7b7;
+    }
+    .status-badge.live .badge-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background-color: var(--emerald-status);
+      box-shadow: 0 0 8px var(--emerald-status);
+    }
+
+    .editable-hint {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-family: var(--font-code);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      background: rgba(255, 255, 255, 0.04);
+      padding: 4px 10px;
+      border-radius: 6px;
+      border: 1px dashed rgba(255, 255, 255, 0.15);
+    }
+
+    /* Modals */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; width: 100vw; height: 100vh;
+      background: rgba(4, 6, 10, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-md);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity var(--transition-smooth), visibility var(--transition-smooth);
+    }
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+    .modal-dialog {
+      width: 100%;
+      max-width: 680px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--glass-border-hover);
+      border-radius: var(--radius-2xl);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), var(--glow-cyan-sm);
+      max-height: 90vh;
+      overflow-y: auto;
+      position: relative;
+      transform: translateY(20px) scale(0.97);
+      transition: transform var(--transition-smooth);
+    }
+    .modal-overlay.active .modal-dialog {
+      transform: translateY(0) scale(1);
+    }
+    .modal-header {
+      padding: var(--space-xl) var(--space-xl) var(--space-md);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .modal-close-btn {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--glass-border);
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      transition: all var(--transition-fast);
+    }
+    .modal-close-btn:hover {
+      background: rgba(244, 63, 94, 0.15);
+      border-color: rgba(244, 63, 94, 0.3);
+      color: #ffffff;
+    }
+    .modal-body {
+      padding: var(--space-xl);
+    }
+    .modal-footer {
+      padding: var(--space-md) var(--space-xl) var(--space-xl);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: var(--space-md);
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    /* Forms */
+    .form-group {
+      margin-bottom: var(--space-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xs);
+      text-align: left;
+    }
+    .form-label {
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-light);
+    }
+    .form-input, .form-textarea {
+      width: 100%;
+      padding: 0.9rem 1.1rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-md);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      transition: all var(--transition-fast);
+      outline: none;
+    }
+    .form-input:focus, .form-textarea:focus {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: var(--cyan-primary);
+      box-shadow: 0 0 15px rgba(0, 210, 255, 0.2);
+    }
+    .form-textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    /* Toast Notifications */
+    #toast-container {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 10000;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      pointer-events: none;
+    }
+    .toast {
+      pointer-events: auto;
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      padding: 12px 18px;
+      background: var(--bg-tertiary);
+      border: 1px solid var(--glass-border-hover);
+      border-radius: var(--radius-md);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), var(--glow-cyan-sm);
+      color: var(--text-primary);
+      font-size: 0.9rem;
+      transform: translateY(20px);
+      opacity: 0;
+      transition: all var(--transition-smooth);
+    }
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .toast-icon {
+      color: var(--cyan-primary);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    /* --------------------------------------------------------------------------
+       4. SECTIONS: NAVBAR, HERO, ABOUT, SKILLS, PROJECTS, EDUCATION, RESUME, CONTACT
+       -------------------------------------------------------------------------- */
+    .navbar {
+      position: fixed;
+      top: 0; left: 0; width: 100%;
+      height: var(--header-height);
+      z-index: 1000;
+      background: rgba(7, 9, 14, 0.85);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--glass-border);
+      transition: all var(--transition-smooth);
+    }
+    .navbar.scrolled {
+      background: rgba(7, 9, 14, 0.96);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+      border-bottom-color: rgba(0, 210, 255, 0.15);
+    }
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--text-primary);
+      text-decoration: none;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+    .logo-badge {
+      width: 42px; height: 42px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, rgba(0, 210, 255, 0.15), rgba(139, 92, 246, 0.25));
+      border: 1px solid rgba(0, 210, 255, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: #ffffff;
+      box-shadow: 0 0 15px rgba(0, 210, 255, 0.25);
+      transition: all var(--transition-fast);
+      flex-shrink: 0;
+    }
+    .nav-logo:hover .logo-badge {
+      transform: rotate(-4deg) scale(1.05);
+      border-color: var(--cyan-primary);
+    }
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      white-space: nowrap;
+    }
+    .logo-name {
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #ffffff;
+      white-space: nowrap;
+    }
+    .logo-sub {
+      font-size: 0.7rem;
+      font-family: var(--font-code);
+      color: var(--cyan-primary);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .nav-link {
+      font-family: var(--font-heading);
+      font-size: 0.86rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      padding: 5px 10px;
+      border-radius: var(--radius-sm);
+      transition: all var(--transition-fast);
+      position: relative;
+      white-space: nowrap;
+    }
+    .nav-link:hover, .nav-link.active {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.04);
+    }
+    .nav-link.active {
+      color: var(--cyan-primary);
+    }
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 10px; right: 10px; height: 2px;
+      background: var(--gradient-brand);
+      border-radius: var(--radius-full);
+    }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+    .mobile-toggle {
+      display: none;
+      width: 42px; height: 42px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-md);
+      color: var(--text-primary);
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .mobile-toggle span {
+      display: block; width: 20px; height: 2px; background: #ffffff; position: relative; transition: all 0.25s ease;
+    }
+    .mobile-toggle span::before, .mobile-toggle span::after {
+      content: ''; position: absolute; width: 100%; height: 100%; background: inherit; transition: all 0.25s ease;
+    }
+    .mobile-toggle span::before { top: -6px; }
+    .mobile-toggle span::after { bottom: -6px; }
+    .mobile-toggle.active span { background: transparent; }
+    .mobile-toggle.active span::before { top: 0; transform: rotate(45deg); }
+    .mobile-toggle.active span::after { bottom: 0; transform: rotate(-45deg); }
+
+    /* Hero Section */
+    .hero-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: calc(var(--header-height) + 40px);
+      padding-bottom: var(--space-4xl);
+      position: relative;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: center;
+      gap: var(--space-3xl);
+    }
+    .hero-status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 16px;
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      border-radius: var(--radius-full);
+      font-family: var(--font-code);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #34d399;
+      letter-spacing: 0.06em;
+      margin-bottom: var(--space-lg);
+      box-shadow: 0 0 15px rgba(16, 185, 129, 0.15);
+    }
+    .pulse-radar {
+      position: relative; width: 8px; height: 8px;
+    }
+    .pulse-radar .circle-core {
+      position: absolute; width: 8px; height: 8px; background-color: var(--emerald-status); border-radius: 50%;
+    }
+    .pulse-radar .circle-wave {
+      position: absolute; top: -4px; left: -4px; width: 16px; height: 16px; border-radius: 50%;
+      border: 2px solid var(--emerald-status);
+      animation: radarPulse 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+    }
+    @keyframes radarPulse {
+      0% { transform: scale(0.5); opacity: 1; }
+      100% { transform: scale(2.2); opacity: 0; }
+    }
+    .hero-title {
+      font-size: clamp(2.5rem, 5.5vw, 4rem);
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      line-height: 1.1;
+      margin-bottom: var(--space-md);
+    }
+    .hero-name-gradient {
+      background: var(--gradient-brand);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+    .hero-animated-sub {
+      font-family: var(--font-heading);
+      font-size: clamp(1.25rem, 2.5vw, 1.8rem);
+      font-weight: 600;
+      color: var(--cyan-primary);
+      min-height: 2.2rem;
+      margin-bottom: var(--space-lg);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .typing-cursor {
+      display: inline-block; width: 3px; height: 1.3em; background-color: var(--cyan-primary); margin-left: 2px; animation: blink 0.85s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    .hero-desc {
+      font-size: 1.12rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      max-width: 580px;
+      margin-bottom: var(--space-xl);
+    }
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+      margin-bottom: var(--space-2xl);
+    }
+    .hero-social-row {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+      padding-top: var(--space-md);
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .hero-social-label {
+      font-family: var(--font-code);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .hero-social-links {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+    .hero-visual-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-visual-glow {
+      position: absolute; width: 100%; height: 100%;
+      background: radial-gradient(circle at 50% 50%, rgba(0, 210, 255, 0.22) 0%, rgba(139, 92, 246, 0.15) 45%, transparent 70%);
+      filter: blur(50px);
+      z-index: 1;
+    }
+    .profile-card-frame {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 380px;
+      aspect-ratio: 1 / 1.08;
+      border-radius: var(--radius-2xl);
+      padding: 10px;
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(0, 210, 255, 0.25), rgba(139, 92, 246, 0.2), rgba(255, 255, 255, 0.05));
+      box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 210, 255, 0.25);
+      transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+    }
+    .profile-card-frame:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 35px 80px -10px rgba(0, 0, 0, 0.9), 0 0 45px rgba(0, 210, 255, 0.4);
+    }
+    .profile-inner-container {
+      width: 100%; height: 100%;
+      border-radius: calc(var(--radius-2xl) - 6px);
+      overflow: hidden;
+      position: relative;
+      background: #090c13;
+    }
+    .profile-img {
+      width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: transform 0.5s ease;
+    }
+    .profile-card-frame:hover .profile-img {
+      transform: scale(1.03);
+    }
+    .photo-replace-trigger {
+      position: absolute;
+      bottom: 12px; right: 12px;
+      background: rgba(7, 9, 14, 0.88);
+      border: 1px solid rgba(0, 210, 255, 0.4);
+      color: #ffffff;
+      padding: 6px 12px;
+      border-radius: var(--radius-full);
+      font-family: var(--font-code);
+      font-size: 0.72rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      backdrop-filter: blur(8px);
+      transition: all var(--transition-fast);
+      z-index: 5;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    }
+    .photo-replace-trigger:hover {
+      background: var(--blue-primary);
+      border-color: #ffffff;
+      transform: scale(1.04);
+    }
+    .floating-badge {
+      position: absolute;
+      z-index: 3;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: rgba(13, 16, 23, 0.88);
+      border: 1px solid var(--glass-border-hover);
+      border-radius: var(--radius-full);
+      font-family: var(--font-heading);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #ffffff;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7), var(--glow-cyan-sm);
+      backdrop-filter: blur(12px);
+      white-space: nowrap;
+      animation: floatMotion 4s ease-in-out infinite;
+    }
+    .floating-badge-1 { top: 8%; left: -20px; animation-delay: 0s; }
+    .floating-badge-2 { top: 52%; right: -25px; animation-delay: 1.3s; }
+    .floating-badge-3 { bottom: -15px; left: 15%; animation-delay: 2.6s; }
+    .floating-badge .badge-icon { color: var(--cyan-primary); font-size: 1rem; }
+    @keyframes floatMotion {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    /* About Me */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-2xl);
+      align-items: stretch;
+    }
+    .about-narrative-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .about-quote {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: var(--text-light);
+      margin-bottom: var(--space-xl);
+      position: relative;
+      padding-left: var(--space-md);
+      border-left: 3px solid var(--cyan-primary);
+    }
+    .about-meta-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-md);
+      margin-top: auto;
+      padding-top: var(--space-lg);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .meta-item-label {
+      font-family: var(--font-code);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 4px;
+    }
+    .meta-item-value {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    .about-highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-md);
+    }
+    .highlight-card {
+      padding: var(--space-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+      background: rgba(18, 22, 32, 0.6);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-lg);
+      transition: all var(--transition-smooth);
+    }
+    .highlight-card:hover {
+      background: rgba(22, 28, 42, 0.85);
+      border-color: rgba(0, 210, 255, 0.35);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), var(--glow-cyan-sm);
+    }
+    .highlight-icon-box {
+      width: 44px; height: 44px;
+      border-radius: var(--radius-md);
+      background: rgba(0, 210, 255, 0.1);
+      border: 1px solid rgba(0, 210, 255, 0.25);
+      color: var(--cyan-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      margin-bottom: var(--space-xs);
+    }
+    .highlight-title { font-size: 1.05rem; color: #ffffff; }
+    .highlight-desc { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55; }
+
+    /* Skills */
+    .skills-filter-nav {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-2xl);
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      font-family: var(--font-heading);
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--glass-border);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--blue-primary);
+      color: #ffffff;
+      border-color: var(--cyan-primary);
+      box-shadow: 0 4px 15px rgba(0, 210, 255, 0.3);
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: var(--space-lg);
+    }
+    .skill-card {
+      padding: var(--space-lg);
+      border-radius: var(--radius-lg);
+      background: rgba(14, 18, 27, 0.7);
+      border: 1px solid var(--glass-border);
+      transition: all var(--transition-smooth);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+    .skill-card:hover {
+      transform: translateY(-4px);
+      background: rgba(18, 24, 36, 0.9);
+      border-color: rgba(0, 210, 255, 0.35);
+      box-shadow: var(--shadow-card-hover), 0 0 20px rgba(0, 210, 255, 0.12);
+    }
+    .skill-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: var(--space-md);
+    }
+    .skill-icon-wrapper {
+      width: 48px; height: 48px;
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+    }
+    .skill-icon-wrapper svg { width: 28px; height: 28px; }
+    .skill-level-badge {
+      font-family: var(--font-code);
+      font-size: 0.7rem;
+      padding: 3px 8px;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .skill-level-badge.foundation {
+      background: rgba(0, 210, 255, 0.1); border: 1px solid rgba(0, 210, 255, 0.3); color: var(--cyan-primary);
+    }
+    .skill-level-badge.proficient {
+      background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); color: var(--emerald-status);
+    }
+    .skill-level-badge.beginner {
+      background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.3); color: var(--violet-primary);
+    }
+    .skill-level-badge.learning {
+      background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.3); color: var(--amber-learning);
+    }
+    .skill-level-badge.editable {
+      background: rgba(255, 255, 255, 0.06); border: 1px dashed rgba(255, 255, 255, 0.25); color: var(--text-light);
+    }
+    .skill-title { font-size: 1.15rem; color: #ffffff; margin-bottom: 4px; }
+    .skill-desc { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: var(--space-md); flex-grow: 1; }
+    .skill-category-tag { font-family: var(--font-code); font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; }
+
+    /* Projects */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: var(--space-xl);
+    }
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      background: rgba(13, 16, 25, 0.8);
+      border: 1px solid var(--glass-border);
+      transition: all var(--transition-smooth);
+    }
+    .project-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(0, 210, 255, 0.4);
+      box-shadow: 0 20px 45px -5px rgba(0, 0, 0, 0.75), 0 0 30px rgba(0, 210, 255, 0.15);
+    }
+    .project-media-container {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      position: relative;
+      overflow: hidden;
+      background: #080b12;
+    }
+    .project-img {
+      width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .project-card:hover .project-img { transform: scale(1.06); }
+    .project-badge-overlay {
+      position: absolute;
+      top: 14px; left: 14px;
+      z-index: 2;
+      display: flex;
+      gap: 8px;
+      background: rgba(8, 11, 18, 0.85);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 4px 8px;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    }
+    .project-content {
+      padding: var(--space-xl);
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .project-category {
+      font-family: var(--font-code);
+      font-size: 0.75rem;
+      color: var(--cyan-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+    }
+    .project-title { font-size: 1.35rem; color: #ffffff; margin-bottom: var(--space-sm); line-height: 1.25; }
+    .project-desc { font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: var(--space-lg); flex-grow: 1; }
+    .project-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: var(--space-xl); }
+    .project-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-sm);
+      padding-top: var(--space-md);
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    /* Education */
+    .education-timeline {
+      max-width: 820px;
+      margin: 0 auto;
+      position: relative;
+      padding-left: var(--space-2xl);
+    }
+    .education-timeline::before {
+      content: '';
+      position: absolute;
+      top: 10px; bottom: 10px; left: 8px; width: 2px;
+      background: linear-gradient(180deg, var(--cyan-primary) 0%, var(--violet-primary) 80%, transparent 100%);
+    }
+    .timeline-item { position: relative; margin-bottom: var(--space-2xl); }
+    .timeline-item:last-child { margin-bottom: 0; }
+    .timeline-node {
+      position: absolute;
+      top: 10px; left: calc(-1 * var(--space-2xl) + 2px);
+      width: 14px; height: 14px;
+      border-radius: 50%;
+      background: var(--bg-primary);
+      border: 3px solid var(--cyan-primary);
+      box-shadow: 0 0 12px var(--cyan-primary);
+      z-index: 2;
+    }
+    .timeline-card { padding: var(--space-xl); }
+    .timeline-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-md);
+    }
+    .timeline-degree { font-size: 1.35rem; color: #ffffff; margin-bottom: 4px; }
+    .timeline-institution { font-size: 1rem; color: var(--cyan-primary); font-weight: 500; }
+    .timeline-badge {
+      font-family: var(--font-code);
+      font-size: 0.8rem;
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      background: rgba(0, 210, 255, 0.1);
+      border: 1px solid rgba(0, 210, 255, 0.3);
+      color: var(--cyan-primary);
+      font-weight: 600;
+    }
+    .timeline-body p { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: var(--space-md); }
+    .timeline-coursework-title {
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-light);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .timeline-coursework-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+
+    /* Achievements */
+    .achievements-banner {
+      padding: var(--space-xl);
+      border-radius: var(--radius-xl);
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.12), rgba(0, 210, 255, 0.08));
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      margin-bottom: var(--space-2xl);
+      text-align: center;
+    }
+    .achievements-banner h3 { font-size: 1.3rem; color: #ffffff; margin-bottom: 6px; }
+    .achievements-banner p { color: var(--text-light); font-size: 0.95rem; max-width: 650px; margin: 0 auto; }
+    .achievements-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-lg); }
+    .achievement-placeholder-card {
+      padding: var(--space-xl);
+      border-radius: var(--radius-lg);
+      background: rgba(14, 18, 27, 0.5);
+      border: 1px dashed rgba(255, 255, 255, 0.15);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+      transition: all var(--transition-smooth);
+    }
+    .achievement-placeholder-card:hover {
+      background: rgba(18, 24, 36, 0.7);
+      border-color: rgba(0, 210, 255, 0.4);
+      transform: translateY(-3px);
+    }
+    .achievement-icon {
+      width: 44px; height: 44px;
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--violet-primary);
+      font-size: 1.25rem;
+    }
+    .achievement-card-title { font-size: 1.1rem; color: #ffffff; }
+    .achievement-card-text { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5; }
+
+    /* Resume */
+    .resume-card {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: var(--space-3xl) var(--space-2xl);
+      background: linear-gradient(145deg, rgba(16, 20, 30, 0.9), rgba(12, 14, 22, 0.85));
+      border: 1px solid rgba(0, 210, 255, 0.25);
+      border-radius: var(--radius-2xl);
+      box-shadow: var(--shadow-card), 0 0 30px rgba(0, 210, 255, 0.1);
+    }
+    .resume-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+      margin-bottom: var(--space-xl);
+      padding-bottom: var(--space-xl);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .resume-candidate-name { font-size: 1.85rem; color: #ffffff; margin-bottom: 4px; }
+    .resume-candidate-title { font-family: var(--font-code); font-size: 0.9rem; color: var(--cyan-primary); }
+    .resume-body-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2xl); margin-bottom: var(--space-2xl); }
+    .resume-block-title {
+      font-size: 1rem; font-weight: 700; color: #ffffff; margin-bottom: var(--space-sm); display: flex; align-items: center; gap: 8px;
+    }
+    .resume-block-title svg { color: var(--cyan-primary); }
+    .resume-block p { font-size: 0.92rem; line-height: 1.65; color: var(--text-light); }
+    .resume-action-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+      padding-top: var(--space-xl);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .resume-cta-group { display: flex; align-items: center; gap: var(--space-md); flex-wrap: wrap; }
+
+    /* Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: var(--space-3xl);
+      align-items: flex-start;
+    }
+    .contact-info-card {
+      padding: var(--space-2xl);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xl);
+    }
+    .contact-channel-item { display: flex; align-items: flex-start; gap: var(--space-md); }
+    .contact-channel-icon {
+      width: 48px; height: 48px;
+      border-radius: var(--radius-md);
+      background: rgba(0, 210, 255, 0.1);
+      border: 1px solid rgba(0, 210, 255, 0.25);
+      color: var(--cyan-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.2rem;
+    }
+    .contact-channel-info { flex-grow: 1; }
+    .contact-channel-label {
+      font-family: var(--font-code); font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 2px;
+    }
+    .contact-channel-value {
+      font-size: 1rem; font-weight: 600; color: #ffffff; word-break: break-all;
+    }
+    .contact-channel-value a:hover { color: var(--cyan-primary); }
+    .copy-email-btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--glass-border);
+      color: var(--text-light);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-code);
+      font-size: 0.75rem;
+      cursor: pointer;
+      margin-top: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all var(--transition-fast);
+    }
+    .copy-email-btn:hover { background: var(--blue-primary); color: #ffffff; border-color: var(--cyan-primary); }
+    .contact-form-card { padding: var(--space-2xl); }
+    .contact-form-title { font-size: 1.5rem; color: #ffffff; margin-bottom: var(--space-xs); }
+    .contact-form-sub { font-size: 0.95rem; color: var(--text-secondary); margin-bottom: var(--space-xl); }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      background: #05070a;
+      padding: var(--space-3xl) 0 var(--space-xl);
+      position: relative;
+      z-index: 2;
+    }
+    .footer-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--space-xl);
+      margin-bottom: var(--space-2xl);
+      padding-bottom: var(--space-xl);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .footer-built-with { font-family: var(--font-code); font-size: 0.8rem; color: var(--cyan-primary); }
+
+    /* Back to Top */
+    #back-to-top {
+      position: fixed;
+      bottom: 28px; right: 28px;
+      width: 46px; height: 46px;
+      border-radius: var(--radius-md);
+      background: rgba(13, 16, 25, 0.9);
+      border: 1px solid var(--glass-border-hover);
+      color: var(--cyan-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: all var(--transition-smooth);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6), var(--glow-cyan-sm);
+      backdrop-filter: blur(10px);
+    }
+    #back-to-top.visible { opacity: 1; visibility: visible; }
+    #back-to-top:hover { background: var(--blue-primary); color: #ffffff; transform: translateY(-3px); }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .hero-grid { grid-template-columns: 1fr; gap: var(--space-2xl); text-align: center; }
+      .hero-content { display: flex; flex-direction: column; align-items: center; }
+      .hero-desc { margin-left: auto; margin-right: auto; }
+      .hero-actions, .hero-social-row { justify-content: center; }
+      .about-grid, .contact-grid { grid-template-columns: 1fr; }
+      .achievements-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .mobile-toggle { display: flex; }
+      .nav-menu {
+        position: fixed;
+        top: var(--header-height); left: 0; width: 100%;
+        height: calc(100vh - var(--header-height));
+        background: rgba(7, 9, 14, 0.98);
+        backdrop-filter: blur(24px);
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: var(--space-2xl) var(--space-lg);
+        gap: var(--space-md);
+        transform: translateX(100%);
+        transition: transform var(--transition-smooth);
+        border-top: 1px solid var(--glass-border);
+        overflow-y: auto;
+      }
+      .nav-menu.active { transform: translateX(0); }
+      .nav-link { width: 100%; text-align: center; font-size: 1.15rem; padding: 12px; }
+      .nav-actions { display: none; }
+      .about-highlights-grid, .projects-grid, .resume-body-grid, .achievements-grid { grid-template-columns: 1fr; }
+      .floating-badge { padding: 6px 12px; font-size: 0.75rem; }
+      .floating-badge-1 { left: 0; }
+      .floating-badge-2 { right: 0; }
+      .floating-badge-3 { left: 10%; }
+      .resume-action-bar, .resume-cta-group { flex-direction: column; width: 100%; }
+      .resume-cta-group .btn { width: 100%; }
+    }
+    @media (max-width: 480px) {
+      .hero-title { font-size: 2.2rem; }
+      .hero-animated-sub { font-size: 1.1rem; min-height: 3rem; }
+      .hero-actions .btn { width: 100%; }
+      .profile-card-frame { max-width: 300px; }
+      .floating-badge { display: none; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .footer-top, .footer-bottom { flex-direction: column; text-align: center; gap: var(--space-md); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .floating-badge, .pulse-radar .circle-wave { animation: none !important; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Ambient Interactive Canvas & Background Layers -->
+  <canvas id="ambient-canvas"></canvas>
+  <div class="cyber-grid-overlay" aria-hidden="true"></div>
+  <div class="ambient-glow-orb orb-1" aria-hidden="true"></div>
+  <div class="ambient-glow-orb orb-2" aria-hidden="true"></div>
+
+  <!-- Hidden File Inputs for In-Browser Photo & Resume Customization -->
+  <input type="file" id="photo-file-input" accept="image/*" style="display: none;" aria-label="Upload Profile Photo" />
+  <input type="file" id="resume-file-input" accept="application/pdf" style="display: none;" aria-label="Upload PDF Resume" />
+
+  <!-- ========================================================================
+       STICKY NAVIGATION BAR
+       ======================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo" aria-label="Sunil Kumar Nandikol Home">
+        <div class="logo-badge">SN</div>
+        <div class="logo-text">
+          <span class="logo-name">Sunil Kumar Nandikol</span>
+          <span class="logo-sub">CSE Undergrad // PESCE</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-secondary btn-sm">Get in Touch</a>
+        <a href="#resume" class="btn btn-primary btn-sm btn-download-resume">Resume</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       HERO SECTION
+       ======================================================================== -->
+  <main>
+    <section class="section hero-section" id="home">
+      <div class="container hero-grid">
+        <!-- Hero Left Column -->
+        <div class="hero-content">
+          <div class="hero-status-pill">
+            <div class="pulse-radar" aria-hidden="true">
+              <div class="circle-core"></div>
+              <div class="circle-wave"></div>
+            </div>
+            <span>COMPUTER SCIENCE ENGINEERING STUDENT &bull; 3RD YEAR</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <br />
+            <span class="hero-name-gradient">Sunil Kumar Nandikol.</span>
+          </h1>
+
+          <div class="hero-animated-sub" aria-live="polite">
+            <span id="typing-text">I Build Software.</span>
+            <span class="typing-cursor" aria-hidden="true"></span>
+          </div>
+
+          <p class="hero-desc">
+            A passionate engineering student exploring software development and emerging technologies, turning ideas into practical digital solutions.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary btn-lg">
+              Explore My Work
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#resume" class="btn btn-secondary btn-lg btn-download-resume">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download Resume
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              Contact Me &rarr;
+            </a>
+          </div>
+
+          <div class="hero-social-row">
+            <span class="hero-social-label">Connect:</span>
+            <div class="hero-social-links">
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/sunilkumar-nandikol-b1111533b" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="LinkedIn Profile" title="LinkedIn: Sunil Kumar Nandikol">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <!-- GitHub -->
+              <a href="https://github.com/sunilkumar-nandikol" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="GitHub Profile" title="GitHub: sunilkumar-nandikol">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+              <!-- Email -->
+              <a href="mailto:sunilkumarnandikhol@gmail.com" class="btn-icon" aria-label="Send direct email" title="Email: sunilkumarnandikhol@gmail.com">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column (Profile Visual Frame) -->
+        <div class="hero-visual-wrapper">
+          <div class="hero-visual-glow" aria-hidden="true"></div>
+
+          <div class="profile-card-frame">
+            <div class="profile-inner-container">
+              <!-- Embedded Base64 / SVG Self-Contained Profile Photo -->
+              <img 
+                id="hero-profile-img" 
+                class="profile-img" 
+                alt="Sunil Kumar Nandikol - Profile Picture" 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cdefs%3E%3CradialGradient id='bg' cx='50%25' cy='45%25' r='55%25'%3E%3Cstop offset='0%25' stop-color='%23e2e8f0'/%3E%3Cstop offset='65%25' stop-color='%2394a3b8'/%3E%3Cstop offset='100%25' stop-color='%2305070a'/%3E%3C/radialGradient%3E%3ClinearGradient id='glow' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2300d2ff'/%3E%3Cstop offset='50%25' stop-color='%233b82f6'/%3E%3Cstop offset='100%25' stop-color='%238b5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='400' fill='%2307090e'/%3E%3Ccircle cx='200' cy='200' r='188' fill='url(%23bg)'/%3E%3Ccircle cx='200' cy='200' r='188' fill='none' stroke='url(%23glow)' stroke-width='2' opacity='0.6'/%3E%3Cpath d='M80 395 C95 270 145 250 200 250 C255 250 305 270 320 395 Z' fill='%23111318'/%3E%3Cpath d='M160 250 L200 310 L240 250 Z' fill='%231a1d26'/%3E%3Cpath d='M180 250 L200 275 L220 250 Z' fill='%23c99e7b'/%3E%3Ccircle cx='200' cy='205' r='62' fill='%23c99e7b'/%3E%3Cpath d='M150 190 Q150 260 200 260 Q250 260 250 190 Q240 235 200 235 Q160 235 150 190 Z' fill='%231a1512'/%3E%3Cpath d='M182 226 Q200 234 218 226 Q200 238 182 226 Z' fill='%23ffffff'/%3E%3Ccircle cx='182' cy='198' r='4' fill='%23111'/%3E%3Ccircle cx='218' cy='198' r='4' fill='%23111'/%3E%3Cpath d='M138 170 Q130 110 200 110 Q270 110 262 170 Q245 130 200 135 Q155 130 138 170 Z' fill='%23111318'/%3E%3Cpath d='M140 140 Q160 85 220 100 Q260 115 255 145 Q230 110 180 115 Q150 120 140 140 Z' fill='%23231f20'/%3E%3Ccircle cx='200' cy='200' r='194' fill='none' stroke='url(%23glow)' stroke-width='2' stroke-dasharray='10 6' opacity='0.4'/%3E%3C/svg%3E"
+              />
+
+              <!-- In-Browser Replace Photo Button -->
+              <button type="button" class="photo-replace-trigger" id="trigger-photo-upload" title="Upload your real photo directly in browser">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                Change Photo
+              </button>
+            </div>
+          </div>
+
+          <!-- Floating Animated Badges -->
+          <div class="floating-badge floating-badge-1">
+            <span class="badge-icon">⚡</span>
+            <span>Software Development</span>
+          </div>
+          <div class="floating-badge floating-badge-2">
+            <span class="badge-icon">🧠</span>
+            <span>Problem Solving</span>
+          </div>
+          <div class="floating-badge floating-badge-3">
+            <span class="badge-icon">🚀</span>
+            <span>Always Learning</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         ABOUT ME SECTION
+         ======================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span class="dot"></span>
+            01 // PROFILE &amp; PHILOSOPHY
+          </div>
+          <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+          <p class="section-subtitle">
+            An introduction to my engineering background, technical interests, and continuous learning approach.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="glass-card about-narrative-card">
+            <div>
+              <blockquote class="about-quote">
+                “I am a third-year Computer Science Engineering student at PES College of Engineering, Mandya, interested in building useful software and exploring modern technologies. I enjoy learning programming, developing projects, solving problems, and turning creative ideas into working solutions. My goal is to grow as a software engineer through practical projects, continuous learning, and real-world experience.”
+              </blockquote>
+            </div>
+
+            <div class="about-meta-grid">
+              <div class="meta-item">
+                <div class="meta-item-label">Degree &amp; Major</div>
+                <div class="meta-item-value">B.E. Computer Science</div>
+              </div>
+              <div class="meta-item">
+                <div class="meta-item-label">Institution</div>
+                <div class="meta-item-value">PESCE, Mandya</div>
+              </div>
+              <div class="meta-item">
+                <div class="meta-item-label">Current Academic Standing</div>
+                <div class="meta-item-value">3rd Year (Batch 2022-26)</div>
+              </div>
+              <div class="meta-item">
+                <div class="meta-item-label">Focus Areas</div>
+                <div class="meta-item-value">Systems, Web, AI &amp; DevOps</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-highlights-grid">
+            <div class="highlight-card">
+              <div class="highlight-icon-box">💻</div>
+              <h3 class="highlight-title">Computer Science Engineering</h3>
+              <p class="highlight-desc">
+                Building sound foundations in computing theory, data structures, algorithms, operating systems, and computer architecture at PESCE.
+              </p>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon-box">⚙️</div>
+              <h3 class="highlight-title">Software Development</h3>
+              <p class="highlight-desc">
+                Transforming computational logic into structured code across C, C++, and Java, prioritizing clean architecture and memory management.
+              </p>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon-box">🛠️</div>
+              <h3 class="highlight-title">Project-Based Learning</h3>
+              <p class="highlight-desc">
+                Advancing engineering proficiency by designing conceptual platforms, exploring telemetry systems, and analyzing practical domain challenges.
+              </p>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon-box">📈</div>
+              <h3 class="highlight-title">Continuous Improvement</h3>
+              <p class="highlight-desc">
+                Actively expanding into modern Linux tooling, foundational DevOps practices, and emerging Artificial Intelligence workflows every day.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         TECHNICAL SKILLS SECTION
+         ======================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span class="dot"></span>
+            02 // TECHNICAL TOOLKIT
+          </div>
+          <h2 class="section-title">Technical <span class="text-gradient">Skills</span></h2>
+          <p class="section-subtitle">
+            Core programming languages, web technologies, and developer tools. No artificial skill percentages — transparent proficiency and active exploration.
+          </p>
+        </div>
+
+        <div class="skills-filter-nav">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="programming">Programming Languages</button>
+          <button class="filter-btn" data-filter="web">Web Development (Editable)</button>
+          <button class="filter-btn" data-filter="tools">Tools &amp; Infrastructure</button>
+        </div>
+
+        <div class="skills-grid" id="skills-container"></div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         FEATURED PROJECTS SECTION
+         ======================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span class="dot"></span>
+            03 // PROJECT GALLERY
+          </div>
+          <h2 class="section-title">Featured <span class="text-gradient">Projects &amp; Concepts</span></h2>
+          <p class="section-subtitle">
+            Innovative software architectures, platform concepts, and engineering prototypes. Every concept is documented with structural design and problem-solving rationale.
+          </p>
+        </div>
+
+        <div class="projects-grid" id="projects-container"></div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         EDUCATION TIMELINE SECTION
+         ======================================================================== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span class="dot"></span>
+            04 // ACADEMIC RECORD
+          </div>
+          <h2 class="section-title">Education <span class="text-gradient">Timeline</span></h2>
+          <p class="section-subtitle">
+            Academic foundation and university coursework in Computer Science Engineering.
+          </p>
+        </div>
+
+        <div class="education-timeline" id="education-timeline-container"></div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         ACHIEVEMENTS & CERTIFICATIONS SECTION
+         ======================================================================== -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span class="dot"></span>
+            05 // MILESTONES &amp; ACTIVITIES
+          </div>
+          <h2 class="section-title">Achievements &amp; <span class="text-gradient">Certifications</span></h2>
+          <p class="section-subtitle">
+            Technical milestones, collegiate events, and continuous skill acquisition.
+          </p>
+        </div>
+
+        <div class="achievements-banner">
+          <h3 id="achievements-notice">
+            My learning journey is ongoing. Actively participating in hackathons, workshops, and technical certifications — updates coming soon!
+          </h3>
+          <p>
+            As a 3rd-year engineering student, I am actively engaging in collegiate coding challenges, technical seminars, and certification tracks to build tangible accomplishments.
+          </p>
+        </div>
+
+        <div class="achievements-grid" id="achievements-container"></div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         RESUME SECTION
+         ======================================================================== -->
+    <section class="section" id="resume">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span class="dot"></span>
+            06 // CURRICULUM VITAE
+          </div>
+          <h2 class="section-title">Professional <span class="text-gradient">Resume</span></h2>
+          <p class="section-subtitle">
+            A comprehensive overview of my academic background, technical skills, and software engineering interests.
+          </p>
+        </div>
+
+        <div class="resume-card">
+          <div class="resume-header">
+            <div>
+              <h3 class="resume-candidate-name">Sunil Kumar Nandikol</h3>
+              <div class="resume-candidate-title">Computer Science Engineering Student | Aspiring Software Developer</div>
+              <div style="font-family: var(--font-code); font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">
+                PES College of Engineering, Mandya &bull; 3rd Year B.E. (Batch 2022-26)
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-lg btn-download-resume">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download Resume (PDF)
+            </button>
+          </div>
+
+          <div class="resume-body-grid">
+            <div class="resume-block">
+              <h4 class="resume-block-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                Professional Objective
+              </h4>
+              <p>
+                Dedicated 3rd-year Computer Science Engineering student at PES College of Engineering, Mandya. Proficient in C, C++, and Java with an active passion for software architecture, problem-solving, and modern technology. Seeking software engineering internship opportunities.
+              </p>
+            </div>
+
+            <div class="resume-block">
+              <h4 class="resume-block-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                Technical Competencies
+              </h4>
+              <p>
+                <strong>Languages:</strong> C, C++, Java, Python (Beginner)<br />
+                <strong>Web:</strong> HTML5, CSS3, JavaScript (Editable)<br />
+                <strong>Tools &amp; Platforms:</strong> Git, GitHub, VS Code, Linux / Kali Linux
+              </p>
+            </div>
+          </div>
+
+          <div class="resume-action-bar">
+            <div class="resume-cta-group">
+              <button class="btn btn-secondary btn-sm" id="btn-view-resume-modal">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                Preview Document
+              </button>
+              <button class="btn btn-secondary btn-sm" id="trigger-resume-upload">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                Upload / Replace PDF
+              </button>
+            </div>
+            <span class="editable-hint">100% Self-Contained Document Viewer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CONTACT SECTION
+         ======================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span class="dot"></span>
+            07 // INQUIRIES &amp; COLLABORATION
+          </div>
+          <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+          <p class="section-subtitle">
+            Open to summer software engineering internships, collegiate hackathons, open-source projects, and technical discussions.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="glass-card contact-info-card">
+            <div class="contact-channel-item">
+              <div class="contact-channel-icon">✉</div>
+              <div class="contact-channel-info">
+                <div class="contact-channel-label">Direct Email</div>
+                <div class="contact-channel-value">
+                  <a href="mailto:sunilkumarnandikhol@gmail.com">sunilkumarnandikhol@gmail.com</a>
+                </div>
+                <button type="button" class="copy-email-btn" id="copy-email-trigger">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  Copy Email Address
+                </button>
+              </div>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="contact-channel-icon">in</div>
+              <div class="contact-channel-info">
+                <div class="contact-channel-label">LinkedIn Profile</div>
+                <div class="contact-channel-value">
+                  <a href="https://www.linkedin.com/in/sunilkumar-nandikol-b1111533b" target="_blank" rel="noopener noreferrer">
+                    linkedin.com/in/sunilkumar-nandikol-b1111533b &rarr;
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="contact-channel-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </div>
+              <div class="contact-channel-info">
+                <div class="contact-channel-label">GitHub Repository</div>
+                <div class="contact-channel-value">
+                  <a href="https://github.com/sunilkumar-nandikol" target="_blank" rel="noopener noreferrer">
+                    github.com/sunilkumar-nandikol &rarr;
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="contact-channel-icon">📍</div>
+              <div class="contact-channel-info">
+                <div class="contact-channel-label">Campus &amp; Location</div>
+                <div class="contact-channel-value">
+                  PES College of Engineering, Mandya, Karnataka, India
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card contact-form-card">
+            <h3 class="contact-form-title">Send a Direct Message</h3>
+            <p class="contact-form-sub">
+              Fill out this form to send an inquiry directly to my personal inbox.
+            </p>
+
+            <form id="portfolio-contact-form" autocomplete="on">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Full Name *</label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Alex Johnson" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email Address *</label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. alex@company.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="e.g. Internship Inquiry / Project Collaboration" />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Your Message *</label>
+                <textarea id="contact-message" name="message" class="form-textarea" placeholder="Hello Sunil, I came across your portfolio and wanted to discuss..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                Send Message to Sunil
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#home" class="nav-logo">
+          <div class="logo-badge">SN</div>
+          <div class="logo-text">
+            <span class="logo-name">Sunil Kumar Nandikol</span>
+            <span class="logo-sub">Computer Science Engineering Student</span>
+          </div>
+        </a>
+
+        <div class="hero-social-links">
+          <a href="https://www.linkedin.com/in/sunilkumar-nandikol-b1111533b" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="https://github.com/sunilkumar-nandikol" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a href="mailto:sunilkumarnandikhol@gmail.com" class="btn-icon" aria-label="Email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          &copy; 2026 Sunil Kumar Nandikol &bull; PES College of Engineering, Mandya. All rights reserved.
+        </div>
+        <div class="footer-built-with">
+          Single-File Architecture &bull; Ready for GitHub Pages
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  </button>
+
+  <!-- ========================================================================
+       PROJECT DEEP DIVE MODAL
+       ======================================================================== -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <div id="project-modal-category" class="project-category" style="margin-bottom: 4px;"></div>
+          <h3 id="project-modal-title" class="project-title" style="margin-bottom: 6px;"></h3>
+          <span id="project-modal-status" class="status-badge concept">
+            <span class="badge-dot"></span> Concept &amp; Architecture
+          </span>
+        </div>
+        <button class="modal-close-btn" id="project-modal-close" aria-label="Close project modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <h4 style="font-size: 1rem; color: #ffffff; margin-bottom: 8px;">Architecture &amp; Concept Overview</h4>
+        <p id="project-modal-desc" style="font-size: 0.95rem; line-height: 1.7; color: var(--text-light); margin-bottom: var(--space-xl);"></p>
+
+        <h4 style="font-size: 1rem; color: #ffffff; margin-bottom: 8px;">Core Modules &amp; Key Features</h4>
+        <ul id="project-modal-features" style="margin-bottom: var(--space-xl); font-size: 0.92rem; color: var(--text-secondary);"></ul>
+
+        <h4 style="font-size: 1rem; color: #ffffff; margin-bottom: 8px;">Technical Tags</h4>
+        <div id="project-modal-tech" class="project-tags"></div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://github.com/sunilkumar-nandikol" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="project-modal-github">
+          View Repository &rarr;
+        </a>
+        <button class="btn btn-primary btn-sm" onclick="document.getElementById('project-modal').classList.remove('active')">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       RESUME VIEWER MODAL
+       ======================================================================== -->
+  <div class="modal-overlay" id="resume-viewer-modal" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
+    <div class="modal-dialog" style="max-width: 780px;">
+      <div class="modal-header">
+        <div>
+          <h3 id="resume-modal-title" class="project-title" style="margin-bottom: 4px;">Curriculum Vitae Preview</h3>
+          <span style="font-family: var(--font-code); font-size: 0.8rem; color: var(--cyan-primary);">Sunil Kumar Nandikol &bull; PESCE Mandya</span>
+        </div>
+        <button class="modal-close-btn" id="resume-modal-close" aria-label="Close resume modal">&times;</button>
+      </div>
+
+      <div class="modal-body" style="background: rgba(255,255,255,0.02); border-radius: var(--radius-md); padding: var(--space-xl);">
+        <div style="text-align: center; margin-bottom: var(--space-lg); border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: var(--space-md);">
+          <h2 style="font-size: 1.6rem; color: #ffffff;">SUNIL KUMAR NANDIKOL</h2>
+          <p style="color: var(--cyan-primary); font-size: 0.95rem; font-weight: 600;">Computer Science Engineering Student | Aspiring Software Developer</p>
+          <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 4px;">
+            PES College of Engineering, Mandya &bull; sunilkumarnandikhol@gmail.com &bull; linkedin.com/in/sunilkumar-nandikol-b1111533b
+          </p>
+        </div>
+
+        <h4 style="color: var(--cyan-primary); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; margin-bottom: 4px;">Career Objective</h4>
+        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-light); margin-bottom: var(--space-lg);">
+          A passionate 3rd-year Computer Science Engineering student interested in building useful software and exploring modern technologies. Seeking internship opportunities to contribute to real-world engineering projects through continuous learning and technical problem solving.
+        </p>
+
+        <h4 style="color: var(--cyan-primary); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; margin-bottom: 4px;">Education</h4>
+        <div style="margin-bottom: var(--space-lg);">
+          <div style="font-weight: 600; color: #ffffff; font-size: 0.95rem;">Bachelor of Engineering (B.E.) in Computer Science &amp; Engineering</div>
+          <div style="color: var(--text-muted); font-size: 0.85rem;">PES College of Engineering, Mandya &bull; 2022 – 2026 (Expected)</div>
+          <div style="color: var(--emerald-status); font-size: 0.82rem; font-family: var(--font-code);">Current Status: 3rd Year Undergrad</div>
+        </div>
+
+        <h4 style="color: var(--cyan-primary); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; margin-bottom: 4px;">Technical Skills</h4>
+        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-light); margin-bottom: var(--space-lg);">
+          &bull; <strong>Programming:</strong> C, C++, Java, Python (Beginner)<br />
+          &bull; <strong>Web Development:</strong> HTML5, CSS3, JavaScript (Editable Skills)<br />
+          &bull; <strong>Tools:</strong> Git, GitHub, VS Code, Linux / Kali Linux (Learning)<br />
+          &bull; <strong>Interests:</strong> Systems Architecture, AI, DevOps Fundamentals
+        </p>
+
+        <h4 style="color: var(--cyan-primary); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; margin-bottom: 4px;">Project Concepts</h4>
+        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-light);">
+          1. <strong>Agro Transport and Marketplace:</strong> Regional mandi pricing and logistics platform.<br />
+          2. <strong>Cyclo Solar Hub:</strong> Renewable microgrid telemetry (solar, wind, piezoelectric).<br />
+          3. <strong>AI Personal Productivity Assistant:</strong> Cognitive routine planning &amp; task companion.<br />
+          4. <strong>Emergency Response Smart System:</strong> Tactical GPS dispatch &amp; incident triage.
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary btn-sm" onclick="window.print()">Print Document</button>
+        <button class="btn btn-primary btn-sm btn-download-resume">Download Resume File</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast-container"></div>
+
+  <!-- ========================================================================
+       COMPLETE EMBEDDED JAVASCRIPT ENGINE & DATA STORE (Zero external JS files)
+       ======================================================================== -->
+  <script>
+    /* --------------------------------------------------------------------------
+       CENTRALIZED DATA STORE & EMBEDDED VECTOR GRAPHICS (DATA URLS)
+       -------------------------------------------------------------------------- */
+    const PORTFOLIO_DATA = {
+      profile: {
+        name: "Sunil Kumar Nandikol",
+        title: "Computer Science Engineering Student | Aspiring Software Developer",
+        college: "PES College of Engineering, Mandya",
+        currentYear: "3rd Year Engineering",
+        batch: "2022 – 2026 (Expected)",
+        location: "Mandya, Karnataka, India",
+        email: "sunilkumarnandikhol@gmail.com",
+        linkedIn: "https://www.linkedin.com/in/sunilkumar-nandikol-b1111533b",
+        gitHub: "https://github.com/sunilkumar-nandikol",
+        typingPhrases: [
+          "I Build Software.",
+          "I Solve Problems.",
+          "I Create Ideas."
+        ]
+      },
+
+      skills: [
+        { id: "c-lang", name: "C", category: "programming", level: "Core Foundation", badgeType: "foundation", description: "Structured procedural programming, memory pointers, data structures, and foundational algorithms.", icon: "c" },
+        { id: "cpp-lang", name: "C++", category: "programming", level: "Proficient", badgeType: "proficient", description: "Object-Oriented Programming (OOP), STL templates, algorithmic problem-solving, and efficient memory management.", icon: "cpp" },
+        { id: "java-lang", name: "Java", category: "programming", level: "Proficient", badgeType: "proficient", description: "Object-Oriented design patterns, Collections framework, multithreading basics, and enterprise application fundamentals.", icon: "java" },
+        { id: "python-lang", name: "Python", category: "programming", level: "Beginner", badgeType: "beginner", description: "Syntax fundamentals, scripting, automation, problem solving, and exploratory AI / data workflows.", icon: "python" },
+        { id: "html-web", name: "HTML5", category: "web", level: "Core Skill (Editable)", badgeType: "editable", description: "Semantic page structure, modern accessibility standards (a11y), forms, and responsive layouts.", icon: "html" },
+        { id: "css-web", name: "CSS3", category: "web", level: "Core Skill (Editable)", badgeType: "editable", description: "Modern CSS variables, Flexbox, CSS Grid layouts, glassmorphism, responsive media queries, and keyframe animations.", icon: "css" },
+        { id: "js-web", name: "JavaScript", category: "web", level: "Editable Skill", badgeType: "editable", description: "Modern ES6+ syntax, DOM manipulation, asynchronous promises/fetch, event handling, and interactive frontend logic.", icon: "javascript" },
+        { id: "git-tool", name: "Git & GitHub", category: "tools", level: "Editable Skill", badgeType: "editable", description: "Version control, branching, repository management, collaborative workflows, and code hosting.", icon: "git" },
+        { id: "vscode-tool", name: "VS Code", category: "tools", level: "Proficient", badgeType: "proficient", description: "Primary development workspace, extension ecosystem, terminal integration, and debugger setup.", icon: "vscode" },
+        { id: "linux-tool", name: "Linux / Kali Linux", category: "tools", level: "Actively Learning", badgeType: "learning", description: "Command-line navigation, Bash scripting, shell utilities, permissions, and security-oriented Linux environments.", icon: "linux" },
+        { id: "devops-tool", name: "DevOps & Infrastructure as Code", category: "tools", level: "Actively Learning", badgeType: "learning", description: "Exploring CI/CD pipelines, containerization concepts, deployment automation, and modern infrastructure fundamentals.", icon: "devops" },
+        { id: "ai-tool", name: "Artificial Intelligence", category: "tools", level: "Actively Learning", badgeType: "learning", description: "Exploring modern AI concepts, machine learning foundations, intelligent assistance systems, and prompt engineering.", icon: "ai" }
+      ],
+
+      // Embedded Vector Preview Graphics for all 5 Projects (Self-contained Data URLs)
+      projects: [
+        {
+          id: "agro-transport",
+          title: "Agro Transport and Marketplace Platform",
+          category: "Platform Concept & Logistics",
+          status: "Concept & Architecture",
+          statusBadge: "concept",
+          previewImage: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%230a1017'/%3E%3Crect x='30' y='25' width='740' height='45' rx='8' fill='rgba(255,255,255,0.03)' stroke='rgba(255,255,255,0.08)'/%3E%3Ccircle cx='55' cy='47' r='6' fill='%2310b981'/%3E%3Ctext x='75' y='52' font-family='sans-serif' font-size='14' font-weight='700' fill='%23fff'%3EAGRO-TRANS%3C/text%3E%3Ctext x='180' y='52' font-family='sans-serif' font-size='11' fill='%2364748b'%3ELogistics &amp; Market Intelligence Platform%3C/text%3E%3Crect x='30' y='85' width='220' height='150' rx='12' fill='rgba(255,255,255,0.03)' stroke='rgba(255,255,255,0.06)'/%3E%3Ctext x='50' y='115' font-family='sans-serif' font-size='12' fill='%2394a3b8'%3EActive Shipments%3C/text%3E%3Ctext x='50' y='150' font-family='sans-serif' font-size='32' font-weight='700' fill='%23fff'%3E18%3C/text%3E%3Crect x='50' y='190' width='180' height='8' rx='4' fill='rgba(255,255,255,0.08)'/%3E%3Crect x='50' y='190' width='130' height='8' rx='4' fill='%2310b981'/%3E%3Crect x='265' y='85' width='505' height='340' rx='12' fill='rgba(255,255,255,0.03)' stroke='rgba(255,255,255,0.06)'/%3E%3Ctext x='290' y='115' font-family='sans-serif' font-size='14' font-weight='600' fill='%23fff'%3ELogistics Route Optimization%3C/text%3E%3Cpath d='M 310 320 C 370 280, 410 350, 470 260 S 580 230, 640 180 S 710 160, 730 190' fill='none' stroke='%2310b981' stroke-width='3' stroke-dasharray='6 4'/%3E%3Cpath d='M 310 320 C 370 280, 410 350, 470 260' fill='none' stroke='%2300d2ff' stroke-width='4'/%3E%3Ccircle cx='310' cy='320' r='10' fill='%230a1017' stroke='%2310b981' stroke-width='3'/%3E%3Ccircle cx='730' cy='190' r='12' fill='%230a1017' stroke='%233b82f6' stroke-width='3'/%3E%3Crect x='520' y='240' width='220' height='65' rx='8' fill='rgba(12, 19, 27, 0.9)' stroke='rgba(0, 210, 255, 0.3)'/%3E%3Ctext x='535' y='262' font-family='sans-serif' font-size='11' font-weight='600' fill='%2300d2ff'%3EEstimated Net Profit%3C/text%3E%3Ctext x='535' y='288' font-family='sans-serif' font-size='18' font-weight='700' fill='%23fff'%3E₹42,800%3C/text%3E%3C/svg%3E",
+          shortDescription: "A platform concept that helps farmers explore nearby market prices, find buyers, calculate potential profits, and arrange crop transportation.",
+          fullDescription: "Agro Transport is an agricultural tech platform concept engineered to solve the fragmented logistics and market transparency challenges faced by local farmers. The architecture integrates live commodity market price aggregation, interactive route planning, and profit margin calculators.",
+          keyFeatures: [
+            "Live agricultural commodity pricing trends across regional markets",
+            "Direct farmer-to-buyer inquiry and marketplace matching",
+            "Optimized crop freight and transport logistics coordination",
+            "Automated profit estimation calculator based on distance and yield"
+          ],
+          technologies: ["Platform Architecture", "Logistics Engine", "Market Analytics", "Web Architecture"],
+          githubUrl: "https://github.com/sunilkumar-nandikol"
+        },
+        {
+          id: "cyclo-solar-hub",
+          title: "Cyclo Solar Hub",
+          category: "Renewable Energy & IoT Concept",
+          status: "Concept & Feasibility Study",
+          statusBadge: "concept",
+          previewImage: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%230d0e18'/%3E%3Crect x='30' y='25' width='740' height='45' rx='8' fill='rgba(255,255,255,0.03)' stroke='rgba(255,255,255,0.08)'/%3E%3Ccircle cx='55' cy='47' r='6' fill='%238b5cf6'/%3E%3Ctext x='75' y='52' font-family='sans-serif' font-size='14' font-weight='700' fill='%23fff'%3ECYCLO SOLAR HUB%3C/text%3E%3Crect x='30' y='85' width='280' height='340' rx='14' fill='rgba(139,92,246,0.08)' stroke='rgba(139,92,246,0.2)'/%3E%3Ccircle cx='170' cy='220' r='85' fill='none' stroke='rgba(255,255,255,0.05)' stroke-width='14'/%3E%3Ccircle cx='170' cy='220' r='85' fill='none' stroke='%2300d2ff' stroke-width='14' stroke-dasharray='420' stroke-dashoffset='110' stroke-linecap='round'/%3E%3Ctext x='170' y='215' font-family='sans-serif' font-size='34' font-weight='800' fill='%23fff' text-anchor='middle'%3E985.4%3C/text%3E%3Ctext x='170' y='240' font-family='monospace' font-size='14' fill='%2300d2ff' text-anchor='middle'%3EkW / h%3C/text%3E%3Crect x='330' y='85' width='440' height='160' rx='14' fill='rgba(139,92,246,0.08)' stroke='rgba(139,92,246,0.2)'/%3E%3Ctext x='355' y='115' font-family='sans-serif' font-size='13' font-weight='600' fill='%23fff'%3EMulti-Source Generation Telemetry%3C/text%3E%3Crect x='330' y='260' width='440' height='165' rx='14' fill='rgba(139,92,246,0.08)' stroke='rgba(139,92,246,0.2)'/%3E%3Cpath d='M 355 380 Q 420 310 480 340 T 600 320 T 730 360' fill='none' stroke='%238b5cf6' stroke-width='3'/%3E%3Cpath d='M 355 395 Q 430 350 490 380 T 620 350 T 730 385' fill='none' stroke='%2300d2ff' stroke-width='2'/%3E%3C/svg%3E",
+          shortDescription: "A renewable-energy project concept exploring solar, wind, and piezoelectric energy generation with monitoring and energy-management features.",
+          fullDescription: "Cyclo Solar Hub proposes a multi-source renewable micro-generation ecosystem. It conceptually blends hybrid solar photovoltaics, localized wind capture, and piezoelectric kinetic energy harvesting with an intelligent telemetry management dashboard.",
+          keyFeatures: [
+            "Hybrid multi-source telemetry (Solar, Wind, Piezoelectric)",
+            "Real-time power generation and battery storage distribution dashboard",
+            "Kinetic energy foot-traffic harvesting feasibility study",
+            "Environmental impact and carbon offset analytical metrics"
+          ],
+          technologies: ["Renewable Tech", "Telemetry UI", "IoT Architecture", "Energy Management"],
+          githubUrl: "https://github.com/sunilkumar-nandikol"
+        },
+        {
+          id: "ai-productivity",
+          title: "AI-Powered Personal Productivity Assistant",
+          category: "AI & Workflow Automation",
+          status: "Concept & Design",
+          statusBadge: "concept",
+          previewImage: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%230b0c16'/%3E%3Crect x='30' y='25' width='740' height='45' rx='8' fill='rgba(255,255,255,0.03)' stroke='rgba(255,255,255,0.08)'/%3E%3Ccircle cx='55' cy='47' r='6' fill='%23a855f7'/%3E%3Ctext x='75' y='52' font-family='sans-serif' font-size='14' font-weight='700' fill='%23fff'%3ESYNAPSE AI%3C/text%3E%3Crect x='30' y='85' width='460' height='340' rx='14' fill='rgba(255,255,255,0.02)' stroke='rgba(255,255,255,0.06)'/%3E%3Ctext x='55' y='115' font-family='sans-serif' font-size='14' font-weight='600' fill='%23fff'%3ESmart Automation Timeline%3C/text%3E%3Crect x='55' y='155' width='410' height='60' rx='10' fill='rgba(16, 185, 129, 0.08)' stroke='rgba(16, 185, 129, 0.25)'/%3E%3Ctext x='105' y='180' font-family='sans-serif' font-size='13' font-weight='600' fill='%23fff'%3EMorning Deep Work: Algorithms in C++%3C/text%3E%3Crect x='55' y='230' width='410' height='75' rx='10' fill='rgba(139, 92, 246, 0.12)' stroke='rgba(139, 92, 246, 0.4)'/%3E%3Ctext x='105' y='258' font-family='sans-serif' font-size='13' font-weight='600' fill='%23fff'%3EAgro-Transport API Architecture%3C/text%3E%3Crect x='510' y='85' width='260' height='340' rx='14' fill='rgba(139,92,246,0.06)' stroke='rgba(139, 92, 246, 0.25)'/%3E%3Ctext x='530' y='115' font-family='sans-serif' font-size='13' font-weight='600' fill='%23fff'%3EAI Copilot Feed%3C/text%3E%3Crect x='530' y='150' width='220' height='80' rx='8' fill='rgba(139, 92, 246, 0.15)'/%3E%3Ctext x='542' y='175' font-family='sans-serif' font-size='10' font-weight='600' fill='%2300d2ff'%3E✦ Copilot Insights:%3C/text%3E%3Ctext x='542' y='195' font-family='sans-serif' font-size='10' fill='%23fff'%3EPeak focus projecting at 11am.%3C/text%3E%3C/svg%3E",
+          shortDescription: "An AI concept focused on helping people organize tasks, build routines, and manage daily work more effectively.",
+          fullDescription: "An intelligent digital companion concept that optimizes daily task management through adaptive cognitive scheduling. By analyzing routine patterns, the assistant suggests prioritized work intervals and automated task summaries to minimize cognitive overload.",
+          keyFeatures: [
+            "Intelligent cognitive routine planning and auto-prioritized schedules",
+            "Habit tracker with streak momentum algorithms",
+            "AI Copilot assistant drawer for summarization",
+            "Focus scoring and distraction mitigation insights"
+          ],
+          technologies: ["Artificial Intelligence", "Task Automation", "Cognitive UX", "Productivity Engine"],
+          githubUrl: "https://github.com/sunilkumar-nandikol"
+        },
+        {
+          id: "emergency-response",
+          title: "Emergency Response Smart System",
+          category: "Smart City & Systems Concept",
+          status: "Concept & Architecture",
+          statusBadge: "concept",
+          previewImage: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%230a101b'/%3E%3Crect x='30' y='25' width='740' height='45' rx='8' fill='rgba(255,255,255,0.03)' stroke='rgba(255,255,255,0.08)'/%3E%3Ccircle cx='55' cy='47' r='6' fill='%23f59e0b'/%3E%3Ctext x='75' y='52' font-family='sans-serif' font-size='14' font-weight='700' fill='%23fff'%3ESMART EMERGENCY COMMAND%3C/text%3E%3Crect x='30' y='85' width='240' height='340' rx='14' fill='rgba(255,255,255,0.02)' stroke='rgba(255,255,255,0.06)'/%3E%3Crect x='50' y='130' width='200' height='75' rx='8' fill='rgba(239, 68, 68, 0.1)' stroke='rgba(239, 68, 68, 0.3)'/%3E%3Ctext x='62' y='150' font-family='monospace' font-size='10' font-weight='700' fill='%23f87171'%3EINC-9021 • HIGH TRAUMA%3C/text%3E%3Ctext x='62' y='170' font-family='sans-serif' font-size='11' fill='%23fff'%3EHighway Collision #14%3C/text%3E%3Crect x='290' y='85' width='480' height='340' rx='14' fill='rgba(10, 16, 27, 0.8)' stroke='rgba(0, 210, 255, 0.2)'/%3E%3Ccircle cx='530' cy='240' r='100' fill='none' stroke='rgba(239, 68, 68, 0.2)' stroke-width='2' stroke-dasharray='6 4'/%3E%3Ccircle cx='530' cy='240' r='10' fill='rgba(239, 68, 68, 0.5)'/%3E%3Ccircle cx='530' cy='240' r='4' fill='%23fff'/%3E%3Cpath d='M 380 180 L 460 210 L 530 240' fill='none' stroke='%2300d2ff' stroke-width='3' stroke-linecap='round'/%3E%3Ctext x='350' y='170' font-family='monospace' font-size='10' fill='%2300d2ff'%3EEMT Unit 12%3C/text%3E%3C/svg%3E",
+          shortDescription: "A technology project concept focused on improving emergency reporting, coordination, and response.",
+          fullDescription: "A mission-critical system concept tailored for municipal safety and response teams. The proposed design features incident triage prioritization, real-time GPS fleet tracking, and automated dispatch routing.",
+          keyFeatures: [
+            "Incident triage prioritization matrix (Medical, Fire, Traffic)",
+            "Interactive geospatial mapping with live GPS response unit telemetry",
+            "Real-time emergency broadcast notification feed",
+            "Dispatch efficiency metrics and response time analytics"
+          ],
+          technologies: ["Emergency Dispatch", "GIS Mapping", "Incident Triage", "System Architecture"],
+          githubUrl: "https://github.com/sunilkumar-nandikol"
+        },
+        {
+          id: "personal-portfolio",
+          title: "Personal Portfolio Website",
+          category: "Web Engineering & Brand",
+          status: "Live & Implemented",
+          statusBadge: "live",
+          previewImage: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%2307090e'/%3E%3Crect x='40' y='30' width='720' height='390' rx='14' fill='%230b0e17' stroke='rgba(0, 210, 255, 0.3)' stroke-width='1.5'/%3E%3Crect x='40' y='30' width='720' height='40' rx='14' fill='%23121622'/%3E%3Ccircle cx='65' cy='50' r='5' fill='%23ef4444'/%3E%3Ccircle cx='82' cy='50' r='5' fill='%23f59e0b'/%3E%3Ccircle cx='99' cy='50' r='5' fill='%2310b981'/%3E%3Ctext x='400' y='55' font-family='monospace' font-size='10' fill='%2394a3b8' text-anchor='middle'%3Ehttps://sunilkumar-nandikol.dev/portfolio%3C/text%3E%3Ctext x='75' y='190' font-family='sans-serif' font-size='24' font-weight='800' fill='%23fff'%3EHi, I'm Sunil Kumar.%3C/text%3E%3Ctext x='75' y='215' font-family='sans-serif' font-size='14' font-weight='600' fill='%2300d2ff'%3EI Build Software. I Solve Problems.%3C/text%3E%3Crect x='470' y='130' width='230' height='240' rx='18' fill='rgba(255,255,255,0.03)' stroke='%2300d2ff' stroke-width='2'/%3E%3Ctext x='585' y='238' font-family='sans-serif' font-size='34' font-weight='800' fill='%2300d2ff' text-anchor='middle'%3ESN%3C/text%3E%3C/svg%3E",
+          shortDescription: "This portfolio itself, showcasing my profile, technical skills, projects, and learning journey with a futuristic software engineering aesthetic.",
+          fullDescription: "A high-performance, single-file personal portfolio built with modern vanilla web standards. Engineered with glassmorphic cards, dynamic canvas particles, accessible typography, and zero build-step overhead.",
+          keyFeatures: [
+            "Futuristic software engineer dark theme with neon gradients",
+            "100% self-contained single-file architecture ready for GitHub Pages",
+            "Interactive photo and resume replace handlers with local persistence",
+            "Fully responsive, keyboard accessible, and recruiter optimized"
+          ],
+          technologies: ["Vanilla HTML5", "Modern CSS3", "ES6+ JavaScript", "Glassmorphism UI"],
+          githubUrl: "https://github.com/sunilkumar-nandikol"
+        }
+      ],
+
+      education: [
+        {
+          id: "undergraduate",
+          degree: "Bachelor of Engineering (B.E.) in Computer Science & Engineering",
+          institution: "PES College of Engineering, Mandya",
+          duration: "2022 – 2026 (Expected Graduation)",
+          scoreNote: "Current Status: 3rd Year Undergrad",
+          description: "Acquiring strong foundations in computing principles, software engineering, algorithms, database architectures, and systems design.",
+          coursework: ["Data Structures & Algorithms", "Object-Oriented Programming (C++ / Java)", "Operating Systems", "Database Management Systems", "Computer Networks", "Software Engineering"]
+        },
+        {
+          id: "pre-university",
+          degree: "Pre-University / Senior Secondary Education (12th / PUC)",
+          institution: "Pre-University College (Science Stream)",
+          duration: "2020 – 2022",
+          scoreNote: "Completed Pre-University Education",
+          description: "Science stream with core coursework in Physics, Chemistry, Mathematics, and Computer Science.",
+          coursework: ["Physics", "Chemistry", "Mathematics", "Computer Science"]
+        }
+      ],
+
+      achievements: [
+        { title: "Technical Workshops & Hands-on Labs", issuer: "PES College of Engineering & Tech Clubs", date: "Ongoing", description: "Engaging in collegiate coding workshops, peer programming sessions, and technical symposiums." },
+        { title: "Hackathon & Problem Solving Track", issuer: "Collegiate & Open Hackathons", date: "In Preparation", description: "Forming project teams to develop innovative software solutions for collegiate and regional competitions." },
+        { title: "Professional Certification Track", issuer: "Self-Paced Technical Learning", date: "In Progress", description: "Pursuing structured tracks in Java Programming, Linux CLI mastery, and modern cloud fundamentals." }
+      ]
+    };
+
+    /* --------------------------------------------------------------------------
+       TECH LOGOS (EMBEDDED SVGS)
+       -------------------------------------------------------------------------- */
+    const TECH_ICONS = {
+      c: `<svg viewBox="0 0 128 128"><path fill="#00599C" d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48.3 27.8c-1.9 1.1-3.1 3.2-3.1 5.3v55.9c0 2.2 1.2 4.2 3.1 5.3l48.3 27.9c.9.5 2 .8 3.1.8 1.2 0 2.3-.3 3.1-.8l48.3-27.9c1.9-1.1 3.1-3.1 3.1-5.3V36c0-2.1-1.2-4.2-3.1-5.3z"/><path fill="#ffffff" d="M64 21.6c-23.4 0-42.4 19-42.4 42.4S40.6 106.4 64 106.4c17.5 0 32.7-10.7 39-26.1l-16.7-7.2C82.8 81.3 74 87.8 64 87.8c-13.1 0-23.8-10.7-23.8-23.8S50.9 40.2 64 40.2c10 0 18.8 6.5 22.3 14.7l16.7-7.2C96.7 32.3 81.5 21.6 64 21.6z"/></svg>`,
+      cpp: `<svg viewBox="0 0 128 128"><path fill="#00599C" d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48.3 27.8c-1.9 1.1-3.1 3.2-3.1 5.3v55.9c0 2.2 1.2 4.2 3.1 5.3l48.3 27.9c.9.5 2 .8 3.1.8 1.2 0 2.3-.3 3.1-.8l48.3-27.9c1.9-1.1 3.1-3.1 3.1-5.3V36c0-2.1-1.2-4.2-3.1-5.3z"/><path fill="#ffffff" d="M64 21.6c-23.4 0-42.4 19-42.4 42.4S40.6 106.4 64 106.4c17.5 0 32.7-10.7 39-26.1l-16.7-7.2C82.8 81.3 74 87.8 64 87.8c-13.1 0-23.8-10.7-23.8-23.8S50.9 40.2 64 40.2c10 0 18.8 6.5 22.3 14.7l16.7-7.2C96.7 32.3 81.5 21.6 64 21.6z"/><path fill="#00d2ff" d="M96 55h4v6h-4v4h-6v-4h-4v-6h4v-4h6v4zm16 0h4v6h-4v4h-6v-4h-4v-6h4v-4h6v4z"/></svg>`,
+      java: `<svg viewBox="0 0 128 128"><path fill="#EA2D2E" d="M48.2 97.4s-6.9 3.9 4.8 5.3c14.2 1.6 21.5 1.5 37.3-1.6 0 0 5.4 3.4 12.3 6.3-29.6 12.5-66.2-1.2-54.4-10zm-4-17.6s-7.5 5 4.3 6.6c15.2 2 28.5 2.1 50.8-2.6 0 0 3.7 3.8 8.6 5.6-35.8 10.8-77.5 2.3-63.7-9.6zm25-39.7c5.8 6.6 3.8 12.4-3.1 20.3-6.6 7.5-6 12 1.3 19.3-9-3.2-15.6-8.9-13.6-16.5 2.5-9.3 15.6-14.4 15.4-23.1zm11.5 16.5c3.2 3.6 2.3 8.3-2.6 13.9 14.4-2.8 17.5-12.7 10.4-18.4-10.9-8.7 1.8-19.6 1.8-19.6s-16.8 10.8-9.6 24.1z"/><path fill="#5382A1" d="M85.6 112.5c-20.7 7.7-47.5 7.7-65.7.5-2.2-.9 2.4-3 4.2-3.6 16.5 5.5 40.5 5.5 58.7-.3 2.1-.7 4.7 2.4 2.8 3.4z"/></svg>`,
+      python: `<svg viewBox="0 0 128 128"><path fill="#3776AB" d="M63.2 3c-14.2 0-23.4 6.2-23.4 18.2V34h23.9v3.4H30.4C18.3 37.4 8 45.4 8 62.7c0 17 9.8 25.4 21.6 25.4h7.5v-10.6c0-12.3 10.6-23.2 23.2-23.2h23.9V40.2c0-12-9.7-18.7-21-18.7z"/><path fill="#FFD43B" d="M64.8 125c14.2 0 23.4-6.2 23.4-18.2V94H64.3v-3.4h33.3c12.1 0 22.4-8 22.4-25.3 0-17-9.8-25.4-21.6-25.4h-7.5v10.6c0 12.3-10.6 23.2-23.2 23.2H43.8v13.7c0 12 9.7 18.7 21 18.7z"/></svg>`,
+      html: `<svg viewBox="0 0 128 128"><path fill="#E44D26" d="M19.3 115.6L9.6 7.4h108.8l-9.7 108.2-44.7 12.4-44.7-12.4z"/><path fill="#F16529" d="M64 116.5l36.5-10.1 8-89.8H64v99.9z"/><path fill="#ffffff" d="M64 51.5h17.4l-1.6 18.3-15.8 4.3v13.2l28-7.8 3.7-41.2H64V51.5z"/></svg>`,
+      css: `<svg viewBox="0 0 128 128"><path fill="#1572B6" d="M19.3 115.6L9.6 7.4h108.8l-9.7 108.2-44.7 12.4-44.7-12.4z"/><path fill="#33A9DC" d="M64 116.5l36.5-10.1 8-89.8H64v99.9z"/><path fill="#ffffff" d="M64 51.5h17.4l-1.6 18.3-15.8 4.3v13.2l28-7.8 3.7-41.2H64V51.5z"/></svg>`,
+      javascript: `<svg viewBox="0 0 128 128"><path fill="#F7DF1E" d="M1.4 1.4h125.2v125.2H1.4z"/><path fill="#000000" d="M85.7 103.5c3.5 5.8 8.1 10.1 16.4 10.1 6.9 0 11.3-3.5 11.3-8.3 0-5.8-4.6-7.8-12.4-11.2-11.3-4.9-18.7-11.1-18.7-22.7 0-11.3 8.6-20 21.7-20 9.4 0 16.2 3.7 21 12.3l-9.7 6.2c-2.4-4.2-5.4-6.4-11.3-6.4-4.8 0-8.5 3.1-8.5 7.1 0 4.9 3.5 6.9 11.4 10.3 13.2 5.7 19.8 11.6 19.8 23.9 0 13.7-10.7 21.4-24.8 21.4-14 0-22.9-7.2-27.1-16.1l10.9-6.6z"/></svg>`,
+      git: `<svg viewBox="0 0 128 128"><path fill="#F05032" d="M125.7 57.5L70.5 2.3c-3.1-3.1-8.1-3.1-11.2 0L37.1 24.5l16 16c3.3-1.1 7.2-.4 9.9 2.3 2.7 2.7 3.5 6.6 2.3 9.9l15.4 15.4c3.3-1.1 7.2-.4 9.9 2.3 3.8 3.8 3.8 10 0 13.8-3.8 3.8-10 3.8-13.8 0-2.8-2.8-3.5-6.9-2.2-10.3L60.5 59.8v31.4c1 .6 1.9 1.4 2.6 2.1 3.8 3.8 3.8 10 0 13.8-3.8 3.8-10 3.8-13.8 0-3.8-3.8-3.8-10 0-13.8.9-.9 2-1.6 3.1-2.1V59.4c-1.1-.5-2.2-1.2-3.1-2.1-2.9-2.9-3.5-7.1-2.1-10.6L31.3 30.8 2.3 59.8c-3.1 3.1-3.1 8.1 0 11.2l55.2 55.2c3.1 3.1 8.1 3.1 11.2 0l57-57.5c3.1-3 3.1-8.1 0-11.2z"/></svg>`,
+      vscode: `<svg viewBox="0 0 128 128"><path fill="#0065A9" d="M93.3 126.2l31.5-15.3c2-.9 3.2-2.9 3.2-5.1V22.2c0-2.2-1.2-4.2-3.2-5.1L93.3 1.8c-2.4-1.2-5.3-.8-7.3.9L39.8 44.5 17.6 27.6c-1.7-1.3-4.1-1.3-5.8 0L2.7 34.6c-2.3 1.8-2.7 5.1-.9 7.4l24 31.2-24 31.2c-1.8 2.3-1.4 5.6.9 7.4l9.1 7c1.7 1.3 4.1 1.3 5.8 0l22.2-16.9 46.2 41.8c1.3 1.2 3 1.8 4.7 1.8 1 0 1.9-.3 2.6-.7z"/><path fill="#007ACC" d="M107 101.9V26.1L49.1 64 107 101.9z"/><path fill="#1F9CF0" d="M124.8 22.2L93.3 1.8c-2.4-1.2-5.3-.8-7.3.9L39.8 44.5l9.3 19.5 57.9-37.9v75.8l21-10.2c2-.9 3.2-2.9 3.2-5.1V22.2z"/></svg>`,
+      linux: `<svg viewBox="0 0 128 128"><path fill="#f8fafc" d="M64 4c-16 0-26 12-26 30 0 10 3 18 8 24-2 4-6 10-6 17 0 9 5 17 11 22-8 3-17 9-17 19 0 6 5 8 13 8 12 0 20-5 27-5s15 5 27 5c8 0 13-2 13-8 0-10-9-16-17-19 6-5 11-13 11-22 0-7-4-13-6-17 5-6 8-14 8-24 0-18-10-30-26-30z"/><circle cx="54" cy="30" r="4" fill="#000000"/><circle cx="74" cy="30" r="4" fill="#000000"/><path fill="#FFA500" d="M64 36c-5 0-9 4-9 8 0 3 4 6 9 6s9-3 9-6c0-4-4-8-9-8z"/></svg>`,
+      devops: `<svg viewBox="0 0 128 128"><path fill="#00d2ff" d="M42.7 32C24.8 32 10.3 46.4 10.3 64s14.5 32 32.4 32c12.2 0 22.9-6.8 28.5-16.8-5.6-7.8-14.7-13-25.2-13.6-7.8-.5-14.7 5.2-15.2 13-.5 7.8 5.2 14.7 13 15.2 1.5.1 3-.1 4.4-.5-4.4 2.8-9.6 4.3-15.5 4.3-14.6 0-26.4-11.8-26.4-26.4s11.8-26.4 26.4-26.4c8.4 0 15.9 3.9 20.8 10 4.9-6.1 12.4-10 20.8-10 14.6 0 26.4 11.8 26.4 26.4s-11.8 26.4-26.4 26.4c-5.9 0-11.1-1.5-15.5-4.3 1.4.4 2.9.6 4.4.5 7.8-.5 13.5-7.4 13-15.2-.5-7.8-7.4-13.5-15.2-13-10.5.6-19.6 5.8-25.2 13.6 5.6 10 16.3 16.8 28.5 16.8 17.9 0 32.4-14.4 32.4-32S103.2 32 85.3 32c-12.7 0-23.8 7.3-29.3 18-5.5-10.7-16.6-18-29.3-18z"/></svg>`,
+      ai: `<svg viewBox="0 0 128 128"><path fill="none" stroke="#a855f7" stroke-width="6" d="M64 20 L96 40 L96 88 L64 108 L32 88 L32 40 Z"/><circle cx="64" cy="20" r="7" fill="#00d2ff"/><circle cx="96" cy="40" r="7" fill="#8b5cf6"/><circle cx="96" cy="88" r="7" fill="#00d2ff"/><circle cx="64" cy="108" r="7" fill="#8b5cf6"/><circle cx="32" cy="88" r="7" fill="#00d2ff"/><circle cx="32" cy="40" r="7" fill="#8b5cf6"/><circle cx="64" cy="64" r="12" fill="#a855f7"/></svg>`
+    };
+
+    /* --------------------------------------------------------------------------
+       CONTROLLER & INTERACTIVE SCRIPTS
+       -------------------------------------------------------------------------- */
+    document.addEventListener("DOMContentLoaded", () => {
+      initAmbientCanvas();
+      initDynamicTyping();
+      renderSkills("all");
+      renderProjects();
+      renderEducation();
+      renderAchievements();
+      initPhotoHandler();
+      initResumeHandler();
+      initNavigation();
+      initContactForm();
+      initSkillFilters();
+      initProjectModal();
+      initScrollSpy();
+      initBackToTop();
+    });
+
+    function showToast(message, icon = "✦") {
+      let container = document.getElementById("toast-container");
+      if (!container) return;
+      const toast = document.createElement("div");
+      toast.className = "toast";
+      toast.innerHTML = `<span class="toast-icon">${icon}</span><span>${message}</span>`;
+      container.appendChild(toast);
+      requestAnimationFrame(() => toast.classList.add("show"));
+      setTimeout(() => {
+        toast.classList.remove("show");
+        setTimeout(() => toast.remove(), 300);
+      }, 3500);
+    }
+
+    function initAmbientCanvas() {
+      const canvas = document.getElementById("ambient-canvas");
+      if (!canvas) return;
+      const ctx = canvas.getContext("2d");
+      let width = (canvas.width = window.innerWidth);
+      let height = (canvas.height = window.innerHeight);
+
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+      const particles = [];
+      const particleCount = Math.min(Math.floor(width / 26), 45);
+
+      for (let i = 0; i < particleCount; i++) {
+        particles.push({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          vx: (Math.random() - 0.5) * 0.45,
+          vy: (Math.random() - 0.5) * 0.45,
+          radius: Math.random() * 1.8 + 0.8,
+          alpha: Math.random() * 0.45 + 0.15,
+          color: Math.random() > 0.5 ? "rgba(0, 210, 255," : "rgba(139, 92, 246,"
+        });
+      }
+
+      window.addEventListener("resize", () => {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+      });
+
+      function animate() {
+        ctx.clearRect(0, 0, width, height);
+        for (let i = 0; i < particles.length; i++) {
+          const p = particles[i];
+          p.x += p.vx; p.y += p.vy;
+          if (p.x < 0) p.x = width;
+          if (p.x > width) p.x = 0;
+          if (p.y < 0) p.y = height;
+          if (p.y > height) p.y = 0;
+
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+          ctx.fillStyle = `${p.color} ${p.alpha})`;
+          ctx.fill();
+
+          for (let j = i + 1; j < particles.length; j++) {
+            const p2 = particles[j];
+            const dx = p.x - p2.x; const dy = p.y - p2.y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < 110) {
+              ctx.beginPath();
+              ctx.moveTo(p.x, p.y);
+              ctx.lineTo(p2.x, p2.y);
+              ctx.strokeStyle = `rgba(0, 210, 255, ${0.12 * (1 - dist / 110)})`;
+              ctx.lineWidth = 0.7;
+              ctx.stroke();
+            }
+          }
+        }
+        requestAnimationFrame(animate);
+      }
+      animate();
+    }
+
+    function initDynamicTyping() {
+      const target = document.getElementById("typing-text");
+      if (!target) return;
+      const phrases = PORTFOLIO_DATA.profile.typingPhrases;
+      let phraseIndex = 0, charIndex = 0, isDeleting = false;
+
+      function type() {
+        const cur = phrases[phraseIndex];
+        target.textContent = cur.substring(0, isDeleting ? --charIndex : ++charIndex);
+        let delay = isDeleting ? 45 : 85;
+
+        if (!isDeleting && charIndex === cur.length) {
+          delay = 1800; isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false; phraseIndex = (phraseIndex + 1) % phrases.length; delay = 400;
+        }
+        setTimeout(type, delay);
+      }
+      type();
+    }
+
+    function renderSkills(activeCategory = "all") {
+      const container = document.getElementById("skills-container");
+      if (!container) return;
+      const list = activeCategory === "all" ? PORTFOLIO_DATA.skills : PORTFOLIO_DATA.skills.filter(s => s.category === activeCategory);
+      container.innerHTML = "";
+
+      list.forEach(skill => {
+        const card = document.createElement("div");
+        card.className = "skill-card";
+        const iconSvg = TECH_ICONS[skill.icon] || TECH_ICONS.c;
+        card.innerHTML = `
+          <div class="skill-card-top">
+            <div class="skill-icon-wrapper">${iconSvg}</div>
+            <span class="skill-level-badge ${skill.badgeType}">${skill.level}</span>
+          </div>
+          <h3 class="skill-title">${skill.name}</h3>
+          <p class="skill-desc">${skill.description}</p>
+          <span class="skill-category-tag">${skill.category.toUpperCase()}</span>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function initSkillFilters() {
+      const buttons = document.querySelectorAll(".skills-filter-nav .filter-btn");
+      buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+          buttons.forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          renderSkills(btn.getAttribute("data-filter"));
+        });
+      });
+    }
+
+    function renderProjects() {
+      const container = document.getElementById("projects-container");
+      if (!container) return;
+      container.innerHTML = "";
+
+      PORTFOLIO_DATA.projects.forEach(proj => {
+        const card = document.createElement("div");
+        card.className = "project-card";
+        const badgeClass = proj.statusBadge === "live" ? "status-badge live" : "status-badge concept";
+        const tags = proj.technologies.map(t => `<span class="tech-tag">${t}</span>`).join("");
+
+        card.innerHTML = `
+          <div class="project-media-container">
+            <div class="project-badge-overlay">
+              <span class="${badgeClass}"><span class="badge-dot"></span>${proj.status}</span>
+            </div>
+            <img src="${proj.previewImage}" alt="${proj.title}" class="project-img" loading="lazy" />
+          </div>
+          <div class="project-content">
+            <div class="project-category">${proj.category}</div>
+            <h3 class="project-title">${proj.title}</h3>
+            <p class="project-desc">${proj.shortDescription}</p>
+            <div class="project-tags">${tags}</div>
+            <div class="project-actions">
+              <button class="btn btn-primary btn-sm view-project-btn" data-id="${proj.id}">View Architecture</button>
+              <a href="${proj.githubUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                Source Code
+              </a>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+
+      container.querySelectorAll(".view-project-btn").forEach(btn => {
+        btn.addEventListener("click", () => openProjectModal(btn.getAttribute("data-id")));
+      });
+    }
+
+    function initProjectModal() {
+      const modal = document.getElementById("project-modal");
+      const closeBtn = document.getElementById("project-modal-close");
+      if (!modal || !closeBtn) return;
+      closeBtn.addEventListener("click", () => modal.classList.remove("active"));
+      modal.addEventListener("click", e => { if (e.target === modal) modal.classList.remove("active"); });
+      document.addEventListener("keydown", e => { if (e.key === "Escape") modal.classList.remove("active"); });
+    }
+
+    function openProjectModal(id) {
+      const proj = PORTFOLIO_DATA.projects.find(p => p.id === id);
+      if (!proj) return;
+      document.getElementById("project-modal-title").textContent = proj.title;
+      document.getElementById("project-modal-category").textContent = proj.category;
+      document.getElementById("project-modal-desc").textContent = proj.fullDescription;
+      document.getElementById("project-modal-features").innerHTML = proj.keyFeatures.map(f => `<li style="margin-bottom:8px; display:flex; gap:8px;"><span style="color:var(--cyan-primary);">✦</span><span>${f}</span></li>`).join("");
+      document.getElementById("project-modal-tech").innerHTML = proj.technologies.map(t => `<span class="tech-tag">${t}</span>`).join("");
+      document.getElementById("project-modal").classList.add("active");
+    }
+
+    function renderEducation() {
+      const container = document.getElementById("education-timeline-container");
+      if (!container) return;
+      container.innerHTML = "";
+
+      PORTFOLIO_DATA.education.forEach(edu => {
+        const item = document.createElement("div");
+        item.className = "timeline-item";
+        const tags = edu.coursework.map(c => `<span class="tech-tag">${c}</span>`).join("");
+        item.innerHTML = `
+          <div class="timeline-node"></div>
+          <div class="glass-card timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-degree">${edu.degree}</h3>
+                <div class="timeline-institution">${edu.institution}</div>
+              </div>
+              <span class="timeline-badge">${edu.duration}</span>
+            </div>
+            <div class="timeline-body">
+              <p>${edu.description}</p>
+              <div style="margin-bottom:12px; font-family:var(--font-code); font-size:0.85rem; color:var(--emerald-status);">✦ ${edu.scoreNote}</div>
+              <div class="timeline-coursework-title">Core Coursework:</div>
+              <div class="timeline-coursework-tags">${tags}</div>
+            </div>
+          </div>
+        `;
+        container.appendChild(item);
+      });
+    }
+
+    function renderAchievements() {
+      const container = document.getElementById("achievements-container");
+      if (!container) return;
+      container.innerHTML = "";
+
+      PORTFOLIO_DATA.achievements.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "achievement-placeholder-card";
+        card.innerHTML = `
+          <div class="achievement-icon">✦</div>
+          <h4 class="achievement-card-title">${item.title}</h4>
+          <div style="font-family:var(--font-code); font-size:0.78rem; color:var(--cyan-primary);">${item.issuer} • ${item.date}</div>
+          <p class="achievement-card-text">${item.description}</p>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function initPhotoHandler() {
+      const profileImg = document.getElementById("hero-profile-img");
+      const photoInput = document.getElementById("photo-file-input");
+      const triggerBtn = document.getElementById("trigger-photo-upload");
+
+      if (!profileImg) return;
+
+      const saved = localStorage.getItem("user_portfolio_photo");
+      if (saved) profileImg.src = saved;
+
+      if (triggerBtn && photoInput) {
+        triggerBtn.addEventListener("click", () => photoInput.click());
+        photoInput.addEventListener("change", e => {
+          const file = e.target.files[0];
+          if (!file) return;
+          const reader = new FileReader();
+          reader.onload = ev => {
+            profileImg.src = ev.target.result;
+            try {
+              localStorage.setItem("user_portfolio_photo", ev.target.result);
+              showToast("Profile photo updated & cached in browser!", "✓");
+            } catch (err) {
+              showToast("Photo updated!", "✓");
+            }
+          };
+          reader.readAsDataURL(file);
+        });
+      }
+    }
+
+    function initResumeHandler() {
+      const downloadBtns = document.querySelectorAll(".btn-download-resume");
+      const resumeInput = document.getElementById("resume-file-input");
+      const uploadBtn = document.getElementById("trigger-resume-upload");
+      const viewModalBtn = document.getElementById("btn-view-resume-modal");
+
+      downloadBtns.forEach(btn => {
+        btn.addEventListener("click", e => {
+          e.preventDefault();
+          const custom = localStorage.getItem("user_custom_resume");
+          if (custom) {
+            const a = document.createElement("a");
+            a.href = custom;
+            a.download = "Sunil_Kumar_Nandikol_Resume.pdf";
+            a.click();
+            showToast("Downloading your custom resume...", "📄");
+          } else {
+            // Generate valid downloadable PDF document on the fly
+            generateDownloadableResume();
+          }
+        });
+      });
+
+      if (uploadBtn && resumeInput) {
+        uploadBtn.addEventListener("click", () => resumeInput.click());
+        resumeInput.addEventListener("change", e => {
+          const file = e.target.files[0];
+          if (!file) return;
+          const reader = new FileReader();
+          reader.onload = ev => {
+            try {
+              localStorage.setItem("user_custom_resume", ev.target.result);
+              showToast(`Attached custom resume '${file.name}'!`, "✓");
+            } catch (err) {
+              showToast("Resume attached for this session!", "✓");
+            }
+          };
+          reader.readAsDataURL(file);
+        });
+      }
+
+      if (viewModalBtn) {
+        viewModalBtn.addEventListener("click", () => {
+          document.getElementById("resume-viewer-modal").classList.add("active");
+        });
+      }
+      const closeResume = document.getElementById("resume-modal-close");
+      if (closeResume) {
+        closeResume.addEventListener("click", () => {
+          document.getElementById("resume-viewer-modal").classList.remove("active");
+        });
+      }
+    }
+
+    function generateDownloadableResume() {
+      const pdfData = `%PDF-1.4\n1 0 obj\n<< /Type /Catalog /Pages 2 0 R >>\nendobj\n2 0 obj\n<< /Type /Pages /Kids [3 0 R] /Count 1 >>\nendobj\n3 0 obj\n<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>\nendobj\n4 0 obj\n<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>\nendobj\n5 0 obj\n<< /Length 480 >>\nstream\nBT\n/F1 18 Tf\n50 790 Td\n(SUNIL KUMAR NANDIKOL) Tj\n/F1 10 Tf\n0 -20 Td\n(Computer Science Engineering Student | Aspiring Software Developer) Tj\n0 -15 Td\n(PES College of Engineering, Mandya | sunilkumarnandikhol@gmail.com) Tj\n0 -25 Td\n(CAREER OBJECTIVE: Seeking software engineering opportunities to build impactful digital solutions.) Tj\n0 -20 Td\n(TECHNICAL SKILLS: C, C++, Java, Python, HTML5, CSS3, JavaScript, Git, Linux, VS Code.) Tj\nET\nendstream\nendobj\nxref\n0 6\n0000000000 65535 f \n0000000009 00000 n \n0000000058 00000 n \n0000000115 00000 n \n0000000252 00000 n \n0000000333 00000 n \ntrailer\n<< /Size 6 /Root 1 0 R >>\nstartxref\n860\n%%EOF`;
+      const blob = new Blob([pdfData], { type: "application/pdf" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "Sunil_Kumar_Nandikol_Resume.pdf";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      showToast("Downloading Sunil Kumar Nandikol's Resume...", "📄");
+    }
+
+    function initContactForm() {
+      const copyBtn = document.getElementById("copy-email-trigger");
+      const form = document.getElementById("portfolio-contact-form");
+
+      if (copyBtn) {
+        copyBtn.addEventListener("click", () => {
+          navigator.clipboard.writeText("sunilkumarnandikhol@gmail.com").then(() => {
+            showToast("Copied sunilkumarnandikhol@gmail.com to clipboard!", "📋");
+          }).catch(() => {
+            showToast("Email: sunilkumarnandikhol@gmail.com", "✉");
+          });
+        });
+      }
+
+      if (form) {
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          const name = document.getElementById("contact-name").value.trim();
+          const email = document.getElementById("contact-email").value.trim();
+          const sub = document.getElementById("contact-subject").value.trim() || `Inquiry from ${name}`;
+          const msg = document.getElementById("contact-message").value.trim();
+
+          const mailto = `mailto:sunilkumarnandikhol@gmail.com?subject=${encodeURIComponent(sub)}&body=${encodeURIComponent("Hi Sunil,\n\n" + msg + "\n\nFrom: " + name + " (" + email + ")")}`;
+          showToast("Opening your email client to send message...", "✉");
+          setTimeout(() => {
+            window.location.href = mailto;
+            form.reset();
+          }, 600);
+        });
+      }
+    }
+
+    function initNavigation() {
+      const navbar = document.getElementById("navbar");
+      const toggle = document.getElementById("mobile-toggle");
+      const menu = document.getElementById("nav-menu");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 40) navbar.classList.add("scrolled");
+        else navbar.classList.remove("scrolled");
+      });
+
+      if (toggle && menu) {
+        toggle.addEventListener("click", () => {
+          toggle.classList.toggle("active");
+          menu.classList.toggle("active");
+        });
+        menu.querySelectorAll(".nav-link").forEach(link => {
+          link.addEventListener("click", () => {
+            toggle.classList.remove("active");
+            menu.classList.remove("active");
+          });
+        });
+      }
+    }
+
+    function initScrollSpy() {
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      window.addEventListener("scroll", () => {
+        const pos = window.scrollY + 140;
+        sections.forEach(sec => {
+          const top = sec.offsetTop, h = sec.offsetHeight, id = sec.getAttribute("id");
+          if (pos >= top && pos < top + h) {
+            navLinks.forEach(link => {
+              link.classList.remove("active");
+              if (link.getAttribute("href") === `#${id}`) link.classList.add("active");
+            });
+          }
+        });
+      });
+    }
+
+    function initBackToTop() {
+      const btn = document.getElementById("back-to-top");
+      if (!btn) return;
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 380) btn.classList.add("visible");
+        else btn.classList.remove("visible");
+      });
+      btn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+    }
+  </script>
+</body>
+</html>
